@@ -1,6 +1,17 @@
-.Home-container{
-  background-image: url(../../resources/purple-landscape.png);
+.home-container {
+  background-image: url(../../resources/purple-landscape.png) ;
   background-size: cover;
-  display: flex;
+  background-position: bottom;
+  align-items: center;
   height: 100vh;
+  display: flex;
+}
+
+.container-data {
+  
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  align-content: center;
+  
 }
