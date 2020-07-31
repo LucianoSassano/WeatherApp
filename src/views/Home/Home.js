@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Home/Home.css";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -46,7 +46,7 @@ const Home = () => {
       }
     }
 
-    if (localStorage.length == 0) {
+    if (localStorage.length < 1) {
       userFavs.push(userWeather);
       localStorage.setItem("favorites", JSON.stringify(userFavs));
     }
