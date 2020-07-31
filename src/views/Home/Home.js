@@ -28,8 +28,27 @@ const Home = () => {
   };
 
   const handleFavorite = () => {
-    if ((weather != null || weather != [] || weather != "") && localStorage.length == 0) {
-      localStorage.setItem("favorites", JSON.stringify(weather));
+    let userWeather = {
+      country: weather.sys.country,
+      city: weather.name,
+      averageTemp: weather.main.temp,
+      description: weather.weather[0].main,
+    };
+
+    let userFavs = [];
+
+    if (localStorage.length > 0) {
+      const LocalStorageFavs = JSON.parse(localStorage.getItem("favorites"));
+      if (Array.isArray(LocalStorageFavs)) {
+        userFavs = LocalStorageFavs;
+        userFavs.push(userWeather);
+        localStorage.setItem("favorites", JSON.stringify(userFavs));
+      }
+    }
+
+    if (localStorage.length == 0) {
+      userFavs.push(userWeather);
+      localStorage.setItem("favorites", JSON.stringify(userFavs));
     }
   };
 
@@ -45,10 +64,14 @@ const Home = () => {
             <h3>{weather.main.temp} °C</h3>
             <h2>{weather.weather[0].main}</h2>
             <form>
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Share
               </button>
-              <button onClick={handleFavorite} type="button" class="btn btn-primary">
+              <button
+                onClick={handleFavorite}
+                type="button"
+                className="btn btn-primary"
+              >
                 Fav
               </button>
             </form>
