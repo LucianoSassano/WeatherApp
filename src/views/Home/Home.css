@@ -1,0 +1,6 @@
+.Home-container{
+  background-image: url(../../resources/purple-landscape.png);
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+}
