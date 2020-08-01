@@ -12,29 +12,15 @@ const Navbar = (props) => {
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
-
-            <li className="nav-item dropdown">
-              <a className="nav-link " href="./favorites">
-                Favorites
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="./favorites">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
-            </li>
+            <a className="nav-link " href="./favorites">
+              Favorites
+            </a>
           </ul>
           <div className="searchForm">
             <form className="form-inline my-2 my-lg-0">
               <input
                 onChange={props.onChange}
+                onKeyPress={props.handleEnter}
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"

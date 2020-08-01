@@ -2,18 +2,8 @@
   background-image: url(../../resources/purple-landscape.png);
   background-size: cover;
   background-position: bottom;
-  align-items: center;
   height: 100vh;
-  display: flex;
-}
-
-.container-data {
-  text-align: center;
-  height: 10vh;
-  width: 50vw;
-  align-content: center;
-  align-items: center;
-  transform: translateX(50%);
-
+  width: 100%;
+  display: block;
 }
 

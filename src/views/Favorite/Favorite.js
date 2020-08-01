@@ -5,6 +5,20 @@ import WeatherContent from "../../components/WeatherContent/WeatherContent";
 
 const Favorite = () => {
   const [favs, setFavs] = useState([]);
+  const [cond, setCond] = useState("");
+
+  useEffect(() => {
+    if (localStorage.length > 0) {
+      let userFavs = [];
+      let displayedWeather = [];
+      let localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
+      if (Array.isArray(localStorageFavs)) {
+        userFavs = localStorageFavs;
+        userFavs = userFavs.reverse();
+        setFavs(userFavs);
+      }
+    }
+  }, [cond]);
 
   return (
     <>
