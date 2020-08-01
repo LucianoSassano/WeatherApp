@@ -1,5 +1,5 @@
 .home-container {
-  background-image: url(../../resources/purple-landscape.png) ;
+  background-image: url(../../resources/purple-landscape.png);
   background-size: cover;
   background-position: bottom;
   align-items: center;
@@ -8,10 +8,29 @@
 }
 
 .container-data {
-  
   text-align: center;
   height: 10vh;
   width: 100vw;
   align-content: center;
-  
+  color: #eae6ec;
+  text-shadow: 1px 1px #212021;
+
 }
+
+.container-data h1{
+  font-size: 6vw;
+}
+
+.container-data h2{
+  font-size: 4vw;
+}
+
+.container-data h3{
+  font-size: 4vw;
+}
+
+.btn-primary {
+  margin: 1%;
+}
+
+
