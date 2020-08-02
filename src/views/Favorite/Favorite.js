@@ -10,7 +10,6 @@ const Favorite = () => {
   useEffect(() => {
     if (localStorage.length > 0) {
       let userFavs = [];
-      let displayedWeather = [];
       let localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
       if (Array.isArray(localStorageFavs)) {
         userFavs = localStorageFavs;
