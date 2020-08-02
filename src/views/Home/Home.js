@@ -85,20 +85,10 @@ const Home = () => {
             </h1>
             <h2>{Math.round(weather.main.temp)} °C</h2>
             <h3>{weather.weather[0].main}</h3>
-            <form className>
+            <form>
               <button type="button" className="btn btn-primary">
                 Share
               </button>
-              <iframe
-                src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Flocalhost%3A3000%2F&layout=button_count&size=small&width=0&height=0&appId"
-                width="0"
-                height="0"
-                style="border:none;overflow:hidden"
-                scrolling="no"
-                frameborder="0"
-                allowTransparency="true"
-                allow="encrypted-media"
-              ></iframe>
               <button
                 onClick={handleFavorite}
                 type="button"

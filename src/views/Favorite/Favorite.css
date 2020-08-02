@@ -7,3 +7,24 @@
   display: block;
 }
 
+.container-data {
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  align-content: center;
+  color: #eae6ec;
+  text-shadow: 1px 1px #212021;
+  margin-bottom: 6%;
+}
+
+.container-data h1 {
+  font-size: 4vw;
+}
+
+.container-data h2 {
+  font-size: 3vw;
+}
+
+.container-data h3 {
+  font-size: 3vw;
+}
