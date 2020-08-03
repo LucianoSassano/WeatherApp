@@ -8,7 +8,7 @@ const Weather = (props) => {
     if (Array.isArray(localStorageFavs)) jsonFavs = localStorageFavs;
     jsonFavs = jsonFavs.filter(
       (weather) =>
-        weather.city != props.city && weather.country != props.country
+        weather.city !== props.city && weather.country !== props.country
     );
     console.log(jsonFavs);
     localStorage.setItem("favorites", JSON.stringify(jsonFavs));
