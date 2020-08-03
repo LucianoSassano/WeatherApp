@@ -79,16 +79,23 @@ const Home = () => {
           handleEnter={handleEnterKey}
         />
         {typeof weather.main != "undefined" ? (
-          <div className="container-data">
+          <div className="container container-data">
             <h1>
               {weather.name},{weather.sys.country}
             </h1>
             <h2>{Math.round(weather.main.temp)} °C</h2>
             <h3>{weather.weather[0].main}</h3>
             <form>
-              <button type="button" className="btn btn-primary">
+              <a
+                className="btn btn-primary"
+                data-toggle="collapse"
+                href="#collapseSocial"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
                 Share
-              </button>
+              </a>
               <button
                 onClick={handleFavorite}
                 type="button"
@@ -97,6 +104,18 @@ const Home = () => {
                 Fav
               </button>
             </form>
+            <div className="collapse" id="collapseSocial">
+              <iframe
+                className="facebook-btn"
+                src={`https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fapi.openweathermap.org%2Fdata%2F2.5%2Fweather%3Fq%3D${weather.name}%26units%3Dmetric%26appid%3De0587d27e5b47cb13ba1b093e60738f7&layout=button&size=large&width=103&height=28&appId`}
+                width="103"
+                height="28"
+                scrolling="no"
+                frameBorder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
           </div>
         ) : (
           ""

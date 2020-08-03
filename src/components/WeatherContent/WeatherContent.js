@@ -10,19 +10,15 @@ const WeatherContent = (props) => {
       <div className="container">
         <div>
           {results &&
-            results.map((weather, key) =>
-              key < 3 ? (
-                <Weather
-                  key={key}
-                  country={weather.country}
-                  city={weather.city}
-                  temp={Math.round(weather.averageTemp)}
-                  description={weather.description}
-                />
-              ) : (
-                ""
-              )
-            )}
+            results.map((weather, key) => (
+              <Weather
+                key={key}
+                country={weather.country}
+                city={weather.city}
+                temp={Math.round(weather.averageTemp)}
+                description={weather.description}
+              />
+            ))}
         </div>
       </div>
     </>

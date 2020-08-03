@@ -1,10 +1,15 @@
 .favorites-container {
-  background-image: url(../../resources/purple-landscape.png);
+  background: url(../../resources/pink-landscape.png) no-repeat;
+  overflow: scroll;
   background-size: cover;
-  background-position: bottom;
-  height: 100vh;
-  width: 100%;
-  display: block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .container-data {
@@ -27,4 +32,141 @@
 
 .container-data h3 {
   font-size: 2vw;
+}
+
+@media all and (min-width: 280px) {
+  .favorites-container .container-data {
+    margin-bottom: 30%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 11vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 9vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 9vw;
+  }
+
+  .favorites-container .container-data .btn-danger {
+    margin: 2%;
+    font-size: 4vw;
+  }
+}
+
+@media all and (min-width: 320px) {
+  .favorites-container .container-data {
+    margin-bottom: 30%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 10vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 9vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 9vw;
+  }
+}
+
+@media all and (min-width: 375px) {
+  .favorites-container .container-data {
+    margin-bottom: 20%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 8vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 6vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 6vw;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .favorites-container .container-data {
+    margin-bottom: 20%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 8vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 6vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 6vw;
+  }
+
+  .favorites-container .container-data .btn-danger {
+    margin: 2%;
+    font-size: 3vw;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .favorites-container .container-data {
+    margin-bottom: 12%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 6vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 4vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 4vw;
+  }
+
+  .favorites-container .container-data .btn-danger {
+    margin: 2%;
+    font-size: 2vw;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .favorites-container .container-data {
+    margin-bottom: 25%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 5vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 3vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 3vw;
+  }
+
+  .favorites-container .container-data .btn-primary {
+    margin: 4%;
+    font-size: 3vw;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .favorites-container .container-data {
+    margin-bottom: 12%;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 4vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 3vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 3vw;
+  }
+
+  .favorites-container .container-data .btn-danger {
+    margin: 1%;
+    font-size: 1vw;
+  }
 }
