@@ -14,12 +14,12 @@
 
   * NPM:
 
-    - For Ubuntu run the following commands in the terminal to install npm:
+    -For Ubuntu run the following commands in the terminal to install npm:
       1- sudo apt install npm.
       2- npm --version to check that npm is installed.
       3- if installed correctly the terminal should display the current installed npm version.
 
-    - For Windows :
+    -For Windows :
       1- navigate to https://nodejs.org/en/download/
       2- click the Windows Installer button to download the latest default version (the node js installer includes npm Package Manager).
       3- Once the installer finishes downloading, launch it. Open the downloads link in your browser and click the file.
