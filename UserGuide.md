@@ -47,15 +47,8 @@
       3- Open the command prompt and type git --version (if correctly installed it should display the current git version).
 
   * Bootstrap : you can install it by typing npm i bootstrap in the console or terminal , or adding the following CDN's to the index js file in the head.
-    - Css CDN : 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    - Js CDN's: 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    -Navigate to https://getbootstrap.com/docs/4.0/getting-started/introduction/ and copy the Css and Js CDN's from here.
+   
 
   * Once npm and bootstrap has been correctly installed , clone the project to a previously created folder / directory by opening the command prompt , accessing the folder and typing
    git clone https://github.com/LucianoSassano/WeatherApp.git , once the installation has ended open the project with Visual Studio and type npm start in the terminal
