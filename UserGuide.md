@@ -8,28 +8,43 @@
 
   * Visual Studio Code:
     1 - navigate to https://code.visualstudio.com/download.
+    
     2 - select the version corresponding your OS and download.
+    
     3 - run the installer.
+    
     4 - if you selected the default installation settings , a vsc icon should appear in the desktop.
 
   * NPM:
 
     -For Ubuntu run the following commands in the terminal to install npm:
       1- sudo apt install npm.
+      
       2- npm --version to check that npm is installed.
+      
       3- if installed correctly the terminal should display the current installed npm version.
 
     -For Windows :
       1- navigate to https://nodejs.org/en/download/
+      
       2- click the Windows Installer button to download the latest default version (the node js installer includes npm Package Manager).
+      
       3- Once the installer finishes downloading, launch it. Open the downloads link in your browser and click the file.
+      
       Or, browse to the location where you have saved the file and double-click it to launch.
+      
       4- The system will ask if you want to run the software – click Run.
+      
       5- You will be welcomed to the Node.js Setup Wizard – click Next.
+      
       6- On the next screen, review the license agreement. Click Next if you agree to the terms and install the software.
+      
       7- The installer will prompt you for the installation location. Leave the default location, unless you have a specific need to install it somewhere else – then click Next.
+      
       8- The wizard will let you select components to include or remove from the installation. Again, unless you have a specific need, accept the defaults by clicking Next.
+      
       9- Finally, click the Install button to run the installer. When it finishes, click Finish.
+      
       10- Verify the installation typing  'node -v' in the command prompt , it should display the current installed version
 
 
@@ -50,6 +65,5 @@
     -Navigate to https://getbootstrap.com/docs/4.0/getting-started/introduction/ and copy the Css and Js CDN's from here.
    
 
-  * Once npm and bootstrap has been correctly installed , clone the project to a previously created folder / directory by opening the command prompt , accessing the folder and typing
-   git clone https://github.com/LucianoSassano/WeatherApp.git , once the installation has ended open the project with Visual Studio and type npm start in the terminal
-   to run the project , it should open a new tab in the default web browser with the current project running in the port 3000.
+  * Once npm and bootstrap has been correctly installed , clone the project to a previously created folder / directory by opening the command prompt , accessing the folder and       typing git clone https://github.com/LucianoSassano/WeatherApp.git , once the installation has ended open the project with Visual Studio and type npm start in the terminal
+    to run the project , it should open a new tab in the default web browser with the current project running in the port 3000.
