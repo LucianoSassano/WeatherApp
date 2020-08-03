@@ -23,8 +23,8 @@ const Navbar = (props) => {
                 onKeyPress={props.handleEnter}
                 className="form-control mr-sm-2"
                 type="search"
-                placeholder="Search"
-                aria-label="Search"
+                placeholder="Search a location"
+                aria-label="Search a location"
               />
               <button
                 className="btn btn-outline-success my-2 my-sm-0"
