@@ -18,13 +18,30 @@ const Weather = (props) => {
     <>
       <div className="weather-container">
         {typeof props != "undefined" ? (
-          <div className="container-data">
-            <h1>
+          <div className="container-data" aria-label="weather-result">
+            <h1
+              aria-label="city name and country of city"
+              value={(props.city, props.country)}
+            >
               {props.city},{props.country}
             </h1>
-            <h3>{props.temp} °C</h3>
-            <h2>{props.description}</h2>
-            <button className="btn btn-danger" onClick={handleDelete}>
+            <h3
+              aria-label="location temperature in celcius degrees"
+              value={props.temp}
+            >
+              {props.temp} °C
+            </h3>
+            <h2
+              aria-label="location weather description"
+              value={props.description}
+            >
+              {props.description}
+            </h2>
+            <button
+              className="btn btn-danger"
+              onClick={handleDelete}
+              aria-label="delete forecaste from favorites"
+            >
               Delete from favs
             </button>
           </div>
