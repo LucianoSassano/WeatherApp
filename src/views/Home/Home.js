@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Home/Home.css";
 import Navbar from "../../components/Navbar/Navbar";
+import { getLocationWeather } from "../../services/WheaterApi";
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -20,95 +21,48 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`
-    )
-      .then((respuesta) => {
-        return respuesta.json();
+    getLocationWeather(search)
+      .then(results => {
+        setWeather(results);
       })
-      .then((datos) => {
-        setWeather(datos);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
   };
 
   const handleDualSubmit = (e) => {
     e.preventDefault();
-    fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`
-    )
-      .then((respuesta) => {
-        return respuesta.json();
+    getLocationWeather(search)
+      .then(results => {
+        setWeather(results);
       })
-      .then((datos) => {
-        setWeather(datos);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
 
-    fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${secondSerch}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`
-    )
-      .then((respuesta) => {
-        return respuesta.json();
+
+    getLocationWeather(secondSerch)
+      .then(results => {
+        setSecondWeather(results);
       })
-      .then((datos) => {
-        setSecondWeather(datos);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
   };
 
   const handleEnterKey = (e) => {
     if (e.key === "Enter" || e.charCode === 13) {
       e.preventDefault();
-      fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`
-      )
-        .then((respuesta) => {
-          return respuesta.json();
+      getLocationWeather(search)
+        .then(results => {
+          setWeather(results);
         })
-        .then((datos) => {
-          setWeather(datos);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
     }
   };
 
   const handleDualEnterKey = (e) => {
     if (e.key === "Enter" || e.charCode === 13) {
       e.preventDefault();
-      fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`
-      )
-        .then((respuesta) => {
-          return respuesta.json();
-        })
-        .then((datos) => {
-          setWeather(datos);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      getLocationWeather(search)
+      .then(results => {
+        setWeather(results);
+      })
 
-      fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${secondSerch}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`
-      )
-        .then((respuesta) => {
-          return respuesta.json();
-        })
-        .then((datos) => {
-          setSecondWeather(datos);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      getLocationWeather(secondSerch)
+    .then(results => {
+      setSecondWeather(results);
+    })
     }
   };
 
@@ -212,8 +166,8 @@ const Home = () => {
             </div>
           </div>
         ) : (
-          ""
-        )}
+            ""
+          )}
         {typeof secondWeather.main != "undefined" ? (
           <div className="container container-data">
             <h1>
@@ -255,8 +209,8 @@ const Home = () => {
             </div>
           </div>
         ) : (
-          ""
-        )}
+            ""
+          )}
       </div>
     </>
   );
