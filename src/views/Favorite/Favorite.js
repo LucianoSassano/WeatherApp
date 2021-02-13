@@ -15,6 +15,7 @@ const Favorite = () => {
         userFavs = localStorageFavs;
         userFavs = userFavs.reverse();
         setFavs(userFavs);
+        
       }
     }
   }, [cond]);
