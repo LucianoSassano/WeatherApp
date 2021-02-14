@@ -28,7 +28,6 @@ const Weather = (props) => {
   return (
     <>
       <div data-testid = "favoriteWeather" className="weather-container">
-        <button data-testid="deleteBtn"></button>
         { location.city  ? (
           <div className="container-data" aria-label="weather-result">
             <h1
