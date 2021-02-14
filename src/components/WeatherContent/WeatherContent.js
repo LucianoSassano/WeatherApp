@@ -21,7 +21,7 @@ const WeatherContent = (props) => {
       }
     }
   }, [localStorage.length]);
-  console.log(favs);
+  
 
 
   return (

@@ -12,6 +12,7 @@ const Navbar = (props) => {
   return (
     <>
       <nav
+        data-testid = "navbarTestId"
         className="navbar fixed-top navbar-expand-lg navbar-light bg-light"
         aria-label="navbar"
       >
@@ -31,14 +32,15 @@ const Navbar = (props) => {
           <div className="searchForm">
             <div className="custom-control custom-switch">
               <input
+                
                 onClick={handleSerchMode}
                 type="checkbox"
                 className="custom-control-input"
                 id="customSwitch1"
                 aria-label="dual location search toggle button"
               />
-              <label className="custom-control-label" htmlFor="customSwitch1">
-                Dual Location Serch
+              <label data-testid="dualSearchBtn" className="custom-control-label" htmlFor="customSwitch1">
+                Dual Location Search
               </label>
             </div>
             {searchMode ? (
