@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component matches snapshot 1`] = `
+<div
+  className="home-container"
+>
+  <nav
+    aria-label="navbar"
+    className="navbar fixed-top navbar-expand-lg navbar-light bg-light"
+    data-testid="navbarTestId"
+  >
+    <div
+      className="container-fluid"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav mr-auto"
+      >
+        <li
+          aria-label="Home button"
+          className="nav-item "
+        >
+          <a
+            className="nav-link"
+            href="./"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          aria-label="Favorites button"
+          className="nav-item"
+        >
+          <a
+            className="nav-link "
+            href="./favorites"
+          >
+            Favorites
+          </a>
+        </li>
+      </ul>
+      <div
+        className="searchForm"
+      >
+        <div
+          className="custom-control custom-switch"
+        >
+          <input
+            aria-label="dual location search toggle button"
+            className="custom-control-input"
+            id="customSwitch1"
+            onClick={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="custom-control-label"
+            data-testid="dualSearchBtn"
+            htmlFor="customSwitch1"
+          >
+            Dual Location Search
+          </label>
+        </div>
+        <form
+          className="form-inline my-2 my-lg-0"
+        >
+          <input
+            aria-label="Search a location"
+            className="form-control mr-sm-2"
+            onChange={[Function]}
+            onKeyPress={[Function]}
+            placeholder="Search a location"
+            type="search"
+          />
+          <button
+            aria-label="search"
+            className="btn btn-outline-success my-2 my-sm-0"
+            onClick={[Function]}
+            type="button"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  
+</div>
+`;

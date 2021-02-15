@@ -39,84 +39,126 @@
 }
 
 @media all and (min-width: 280px) {
+
   .home-container .container-data {
-    margin-bottom: 80%;
-    margin-top: 10%;
+    margin-bottom: 12vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    
   }
 
   .home-container .container-data h1 {
-    font-size: 18vw;
+    font-size: 15vw;
   }
   .home-container .container-data h2 {
-    font-size: 15vw;
+    font-size: 12vw;
   }
   .home-container .container-data h3 {
-    font-size: 15vw;
+    font-size: 12vw;
   }
 }
 
 @media all and (min-width: 320px) {
   .home-container .container-data {
-    margin-bottom: 80%;
-    margin-top: 10%;
+    
+    margin-bottom: 17vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 18vw;
+    font-size: 15vw;
   }
   .home-container .container-data h2 {
-    font-size: 15vw;
+    font-size: 12vw;
   }
   .home-container .container-data h3 {
-    font-size: 15vw;
+    font-size: 12vw;
+  }
+
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 @media all and (min-width: 375px) {
+
   .home-container .container-data {
-    margin-bottom: 90%;
+    margin-bottom: 25vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 17vw;
+    font-size: 15vw;
   }
   .home-container .container-data h2 {
-    font-size: 15vw;
+    font-size: 13vw;
   }
   .home-container .container-data h3 {
-    font-size: 15vw;
+    font-size: 13vw;
   }
 
   .home-container .container-data .btn-primary {
     margin: 9%;
     font-size: 7vw;
+  }
+
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 @media all and (min-width: 425px) {
+
   .home-container .container-data {
-    margin-bottom: 90%;
+    margin-bottom: 20vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 17vw;
+    font-size: 15vw;
   }
   .home-container .container-data h2 {
-    font-size: 15vw;
+    font-size: 12vw;
   }
   .home-container .container-data h3 {
-    font-size: 15vw;
+    font-size: 12vw;
   }
 
   .home-container .container-data .btn-primary {
     margin: 9%;
     font-size: 7vw;
+  }
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 @media all and (min-width: 768px) {
   .home-container .container-data {
-    margin-bottom: 70%;
+    margin-bottom: 17vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
   }
 
   .home-container .container-data h1 {
@@ -132,6 +174,11 @@
   .home-container .container-data .btn-primary {
     margin: 9%;
     font-size: 6vw;
+  }
+
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -163,6 +210,11 @@
     margin: 5%;
     font-size: 6vw;
   }
+
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media all and (min-width: 1440px) {
@@ -185,12 +237,21 @@
     margin: 4%;
     font-size: 4vw;
   }
+  
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media all and (min-width: 1920px) {
   .home-container .container-data {
-    margin-bottom: 12vh;
-    margin-top: 8%;
+    margin-bottom: 10vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
   }
 
   .home-container .container-data h1 {
@@ -203,8 +264,17 @@
     font-size: 4vw;
   }
 
-  .home-container .container-data .btn-primary {
-    margin: 4%;
+  .home-container .container-data h4 {
     font-size: 2vw;
+  }
+
+  .home-container .container-data .btn-primary {
+    margin: 4vw;
+    font-size: 3vw;
+  }
+
+  .home-container .container-data .button-form{
+    display: flex;
+    justify-content: space-around;
   }
 }

@@ -61,7 +61,9 @@ const Home = () => {
       getLocationWeather(secondSerch).then((results) => {
         setSecondWeather(results);
       });
+
     }
+
   };
 
   const handleFavorite = (weather) => {
@@ -88,6 +90,8 @@ const Home = () => {
     }
   };
 
+
+  
   return (
     <>
       <div className="home-container">

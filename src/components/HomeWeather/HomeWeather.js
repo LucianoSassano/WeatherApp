@@ -24,8 +24,9 @@ const HomeWeather = (props) => {
           <img
             src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
           ></img>
-          <form>
+          <form className="button-form">
             <a
+              data-testid="shareBtn"
               className="btn btn-primary"
               data-toggle="collapse"
               href="#collapseSocial"
@@ -36,6 +37,7 @@ const HomeWeather = (props) => {
               Share
             </a>
             <button
+              data-testid="favoriteBtn"
               onClick={handleFavorite}
               type="button"
               className="btn btn-primary"
