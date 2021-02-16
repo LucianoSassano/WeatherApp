@@ -20,6 +20,8 @@ WeatherApp is a SPA ment to provide users a way to access climatological inforam
     -For [Windows](https://git-scm.com/download/win)
     
       1- select the version corresponding to your OS and download the installer.
+      
       2- once downloaded run the installer.
+      
       3- Open the command prompt and type git --version (if correctly installed it should display the current git version).
 
