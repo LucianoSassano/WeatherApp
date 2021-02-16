@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Favorite component matches snapshot 1`] = `
+exports[`Home component matches snapshot 1`] = `
 <div
-  className="favorites-container"
+  className="home-container"
 >
   <div
     className="navbar-container"
@@ -74,12 +74,15 @@ exports[`Favorite component matches snapshot 1`] = `
               <input
                 aria-label="Search a location"
                 className="form-control mr-sm-2"
+                onChange={[Function]}
+                onKeyPress={[Function]}
                 placeholder="Search a location"
                 type="search"
               />
               <button
                 aria-label="search"
                 className="btn btn-outline-success my-2 my-sm-0"
+                onClick={[Function]}
                 type="button"
               >
                 Search
@@ -90,13 +93,7 @@ exports[`Favorite component matches snapshot 1`] = `
       </div>
     </nav>
   </div>
-  <div>
-    <div
-      aria-label="forecast list "
-      className="container"
-    >
-      <div />
-    </div>
-  </div>
+  
+  
 </div>
 `;

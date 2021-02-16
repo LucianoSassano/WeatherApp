@@ -4,10 +4,9 @@ import Weather from "../Weather/Weather";
 
 const WeatherContent = (props) => {
 
-
-
   const [favs, setFavs] = useState([]);
-  const [cond, setCond] = useState(0);
+
+  console.log(favs);
 
   useEffect(() => {
     if (localStorage.length > 0) {
@@ -36,6 +35,9 @@ const WeatherContent = (props) => {
                 city={favs.city}
                 temp={Math.round(favs.averageTemp)}
                 description={favs.description}
+                detail={favs.detail}
+                icon={favs.icon}
+              
               />
             ))}
         </div>

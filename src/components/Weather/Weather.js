@@ -1,20 +1,15 @@
-
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Weather/Weather.css";
 
 const Weather = (props) => {
-
-  const [location, setLocation]  = useState(props);
-
+  const [location, setLocation] = useState(props);
+  console.log(location);
 
   const handleDelete = () => {
-    
-    
     const localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
     let jsonFavs = [];
     if (Array.isArray(localStorageFavs)) jsonFavs = localStorageFavs;
-    console.log("this are the ls favs => " + jsonFavs);
-    console.log("this his the wheater =>" + props.city);
+
     jsonFavs = jsonFavs.filter(
       (weather) =>
         weather.city !== props.city && weather.country !== props.country
@@ -22,13 +17,12 @@ const Weather = (props) => {
     console.log(jsonFavs);
     localStorage.setItem("favorites", JSON.stringify(jsonFavs));
     setLocation(jsonFavs);
-    
   };
 
   return (
     <>
-      <div data-testid = "favoriteWeather" className="weather-container">
-        { location.city  ? (
+      <div data-testid="favoriteWeather" className="weather-container">
+        {location.city ? (
           <div className="container-data" aria-label="weather-result">
             <h1
               aria-label="city name and country of city"
@@ -48,10 +42,13 @@ const Weather = (props) => {
             >
               {location.description}
             </h2>
+            <h4>{location.detail}</h4>
+            <img
+              src={`http://openweathermap.org/img/wn/${location.icon}@2x.png`}
+            ></img>
+            <br></br>
             <button
-              
-              
-              type = "button"
+              type="button"
               className="btn btn-danger"
               onClick={handleDelete}
               aria-label="delete forecaste from favorites"

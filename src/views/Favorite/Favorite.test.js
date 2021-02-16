@@ -1,9 +1,8 @@
 import React from 'react';
-import { render, cleanup, screen, getByText, waitFor, getByTestId} from '@testing-library/react';
+import { render, cleanup, screen} from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
-import userEvent from '@testing-library/user-event';
 
 import Favorite from './Favorite.js';
 

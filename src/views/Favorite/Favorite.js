@@ -10,8 +10,8 @@ const Favorite = () => {
     <>
       <div className="favorites-container">
         <Navbar className="favorites-nav" />
-        <div className="container-data">
-          <WeatherContent />
+        <div >
+          <WeatherContent className="container-data" />
         </div>
       </div>
     </>
