@@ -45,7 +45,7 @@
 {
    .navbar-container
    {
-       margin-bottom: 33vh;
+       margin-bottom: 20vh;
        font-size: 6vw;
    }
 
@@ -175,7 +175,7 @@
 {
    .navbar-container
    {
-       margin-bottom: 40vh;
+       margin-bottom: 35vh;
        font-size: 6vw;
        
     }
@@ -183,7 +183,7 @@
 
    .single-search-container input{
 
-    height: 4vh;
+    height: 5vh;
     width: 90vw;
     margin-right: auto;
     margin-left: auto;
@@ -192,10 +192,11 @@
     }
 
    .single-search-container button{
+    
+    height: 5vh;
     width: 22vw;
     margin-left: 1vw;
     font-size: 4.0vw;
-
 
     }
 
@@ -211,7 +212,7 @@
     .dual-search-form input{
         
         width: 90vw;
-        height: 4.0vh; 
+        height: 9.0vh; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
         font-size: 4.0vw;
@@ -225,7 +226,7 @@
     .dual-search-form button{
 
         font-size: 4.0vw;
-        height: 4vh;
+        height: 5vh;
         margin-left: 1vw;
         display: flex;
         justify-content: center;
@@ -326,11 +327,11 @@
     {
         
         font-size: 3vh;
-        margin-bottom: 3vh;
+        margin-bottom: 12vh;
     }
     
     .navbar-container label{
-        font-size: 1.5vw;
+        font-size: 2.0vw;
         
     }
 

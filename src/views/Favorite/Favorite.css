@@ -58,8 +58,12 @@
 @media all and (min-width: 320px) {
   .favorites-container .container-data {
     
-    margin-top: 12vh;
-    margin-bottom: 0.1vh;
+    margin-bottom: 0.01vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
   }
 
   .favorites-container .container-data h1 {
@@ -77,6 +81,11 @@
   .favorites-container .container-data {
     margin-top: 11vh;
     margin-bottom: 1vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
   }
 
   .favorites-container .container-data h1 {
@@ -92,8 +101,14 @@
 
 @media all and (min-width: 425px) {
   .favorites-container .container-data {
-    margin-top: 6.5vh;
-    margin-bottom: 6.5vh;
+   
+    margin-bottom: 0.3vh;
+   
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
   }
 
   .favorites-container .container-data h1 {
@@ -112,7 +127,12 @@
 
   .favorites-container .container-data {
     margin-top: 2.5vh;
-    margin-bottom: 11vh;
+    margin-bottom: 0.3vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
   }
 
   .favorites-container .container-data h1 {
@@ -134,7 +154,14 @@
 @media all and (min-width: 1024px) {
   .favorites-container .container-data {
   
-    margin-bottom: 7vh;
+  
+    margin-bottom: 0.3vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+
   }
 
   .favorites-container .container-data h1 {
@@ -155,8 +182,15 @@
 
 @media all and (min-width: 1440px) {
   .favorites-container .container-data {
-  
-    margin-bottom: 7vh;
+
+
+    margin-bottom: 0.03vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+
   }
 
   .favorites-container .container-data h1 {
@@ -177,7 +211,13 @@
 
 @media all and (min-width: 1920px) {
   .favorites-container .container-data {
-    margin-bottom: 12%;
+    margin-bottom: 0.03vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+
   }
 
   .favorites-container .container-data h1 {

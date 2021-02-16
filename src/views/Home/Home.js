@@ -72,6 +72,8 @@ const Home = () => {
       city: weather.name,
       averageTemp: weather.main.temp,
       description: weather.weather[0].main,
+      detail:weather.weather[0].description,
+      icon:weather.weather[0].icon
     };
     let userFavs = [];
 

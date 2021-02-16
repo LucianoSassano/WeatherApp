@@ -3,6 +3,7 @@ import "../Weather/Weather.css";
 
 const Weather = (props) => {
   const [location, setLocation] = useState(props);
+  console.log(location);
 
   const handleDelete = () => {
     const localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
@@ -41,6 +42,11 @@ const Weather = (props) => {
             >
               {location.description}
             </h2>
+            <h4>{location.detail}</h4>
+            <img
+              src={`http://openweathermap.org/img/wn/${location.icon}@2x.png`}
+            ></img>
+            <br></br>
             <button
               type="button"
               className="btn btn-danger"
