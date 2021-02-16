@@ -179,6 +179,8 @@ const Home = () => {
             </h1>
             <h2>{Math.round(secondWeather.main.temp)} °C</h2>
             <h3>{secondWeather.weather[0].main}</h3>
+            <h4>{weather.weather[0].description}</h4>
+            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img>
             <form>
               <a
                 className="btn btn-primary"
