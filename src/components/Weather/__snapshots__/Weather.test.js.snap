@@ -5,9 +5,6 @@ exports[`Weather component matches snapshot 1`] = `
   className="weather-container"
   data-testid="favoriteWeather"
 >
-  <button
-    data-testid="deleteBtn"
-  />
   
 </div>
 `;

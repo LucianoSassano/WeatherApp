@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup} from '@testing-library/react';
+import { cleanup } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';

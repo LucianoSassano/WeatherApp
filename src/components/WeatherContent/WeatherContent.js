@@ -4,10 +4,7 @@ import Weather from "../Weather/Weather";
 
 const WeatherContent = (props) => {
 
-
-
   const [favs, setFavs] = useState([]);
-  const [cond, setCond] = useState(0);
 
   console.log(favs);
 
