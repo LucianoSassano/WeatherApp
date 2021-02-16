@@ -2,15 +2,19 @@
   background: url(../../resources/pink-landscape.png) no-repeat;
   overflow: scroll;
   background-size: cover;
-  background-position: bottom;
-  align-items: center;
-  height: 100vh;
-  display: block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .home-container .container-data {
   text-align: center;
-  height: 10vh;
+  height: 25vh;
   width: 100vw;
   align-content: center;
   color: #eae6ec;
@@ -132,8 +136,17 @@
 }
 
 @media all and (min-width: 1024px) {
+
+  
+
   .home-container .container-data {
-    margin-bottom: 50%;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
   }
 
   .home-container .container-data h1 {
@@ -176,7 +189,7 @@
 
 @media all and (min-width: 1920px) {
   .home-container .container-data {
-    margin-bottom: 22%;
+    margin-bottom: 12vh;
     margin-top: 8%;
   }
 

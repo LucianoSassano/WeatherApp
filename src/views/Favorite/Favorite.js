@@ -1,31 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Favorite.css";
 import Navbar from "../../components/Navbar/Navbar";
 import WeatherContent from "../../components/WeatherContent/WeatherContent";
 
 const Favorite = () => {
-  const [favs, setFavs] = useState([]);
-  const [cond, setCond] = useState("");
-
-  useEffect(() => {
-    if (localStorage.length > 0) {
-      let userFavs = [];
-      let localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
-      if (Array.isArray(localStorageFavs)) {
-        userFavs = localStorageFavs;
-        userFavs = userFavs.reverse();
-        setFavs(userFavs);
-        
-      }
-    }
-  }, [cond]);
+  
 
   return (
     <>
       <div className="favorites-container">
-        <Navbar />
+        <Navbar className="favorites-nav" />
         <div className="container-data">
-          <WeatherContent results={favs} />
+          <WeatherContent />
         </div>
       </div>
     </>

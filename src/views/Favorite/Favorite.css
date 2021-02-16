@@ -36,7 +36,7 @@
 
 @media all and (min-width: 280px) {
   .favorites-container .container-data {
-    margin-bottom: 30%;
+    margin-top: 13vh ;
   }
 
   .favorites-container .container-data h1 {
@@ -57,7 +57,9 @@
 
 @media all and (min-width: 320px) {
   .favorites-container .container-data {
-    margin-bottom: 30%;
+    
+    margin-top: 12vh;
+    margin-bottom: 0.1vh;
   }
 
   .favorites-container .container-data h1 {
@@ -73,7 +75,25 @@
 
 @media all and (min-width: 375px) {
   .favorites-container .container-data {
-    margin-bottom: 20%;
+    margin-top: 11vh;
+    margin-bottom: 1vh;
+  }
+
+  .favorites-container .container-data h1 {
+    font-size: 8vw;
+  }
+  .favorites-container .container-data h2 {
+    font-size: 6vw;
+  }
+  .favorites-container .container-data h3 {
+    font-size: 6vw;
+  }
+}
+
+@media all and (min-width: 425px) {
+  .favorites-container .container-data {
+    margin-top: 6.5vh;
+    margin-bottom: 6.5vh;
   }
 
   .favorites-container .container-data h1 {
@@ -88,8 +108,11 @@
 }
 
 @media all and (min-width: 768px) {
+
+
   .favorites-container .container-data {
-    margin-bottom: 20%;
+    margin-top: 2.5vh;
+    margin-bottom: 11vh;
   }
 
   .favorites-container .container-data h1 {
@@ -110,7 +133,8 @@
 
 @media all and (min-width: 1024px) {
   .favorites-container .container-data {
-    margin-bottom: 12%;
+  
+    margin-bottom: 7vh;
   }
 
   .favorites-container .container-data h1 {
@@ -131,7 +155,8 @@
 
 @media all and (min-width: 1440px) {
   .favorites-container .container-data {
-    margin-bottom: 25%;
+  
+    margin-bottom: 7vh;
   }
 
   .favorites-container .container-data h1 {
