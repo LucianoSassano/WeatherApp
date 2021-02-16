@@ -45,9 +45,63 @@
 {
    .navbar-container
    {
-       margin-bottom: 28vh;
+       margin-bottom: 33vh;
        font-size: 6vw;
    }
+
+   .single-search-container input{
+
+    height: 4vh;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 4.0vw;
+
+    }
+
+   .single-search-container button{
+    width: 22vw;
+    margin-left: 1vw;
+    font-size: 4.0vw;
+
+
+    }
+
+
+    .dual-search-form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .dual-search-form input{
+        
+        width: 90vw;
+        height: 4.0vh; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 4.0vw;
+        display: flex;
+       
+        margin-bottom: 0.5vh;
+        
+
+    }
+
+    .dual-search-form button{
+
+        font-size: 4.0vw;
+        height: 4vh;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
 
     
 }
@@ -60,6 +114,60 @@
        margin-bottom: 28vh;
        font-size: 6vw;
    }
+
+   .single-search-container input{
+
+    height: 4vh;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 4.0vw;
+
+    }
+
+   .single-search-container button{
+    width: 22vw;
+    margin-left: 1vw;
+    font-size: 4.0vw;
+
+
+    }
+
+
+    .dual-search-form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .dual-search-form input{
+        
+        width: 90vw;
+        height: 4.0vh; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 4.0vw;
+        display: flex;
+       
+        margin-bottom: 0.5vh;
+        
+
+    }
+
+    .dual-search-form button{
+
+        font-size: 4.0vw;
+        height: 4vh;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
 }
 
 
@@ -67,9 +175,66 @@
 {
    .navbar-container
    {
-       margin-bottom: 32vh;
+       margin-bottom: 40vh;
        font-size: 6vw;
-   }
+       
+    }
+
+
+   .single-search-container input{
+
+    height: 4vh;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 4.0vw;
+
+    }
+
+   .single-search-container button{
+    width: 22vw;
+    margin-left: 1vw;
+    font-size: 4.0vw;
+
+
+    }
+
+
+    .dual-search-form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .dual-search-form input{
+        
+        width: 90vw;
+        height: 4.0vh; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 4.0vw;
+        display: flex;
+       
+        margin-bottom: 0.5vh;
+        
+
+    }
+
+    .dual-search-form button{
+
+        font-size: 4.0vw;
+        height: 4vh;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+   
 }
 
 
@@ -80,17 +245,73 @@
     {
         
         font-size: 3vh;
+        margin-bottom: 22vh;
     }
+
+    .navbar-container label{
+        font-size: 2.5vw;
+        
+    }
+
+    
 
     .navbar
     {
-        height: 25vh;
+        height: 17vh;
     }
+
+
+    .single-search-container input{
+
+        height: 4.0vw; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 2.2vw;
+
+    }
+
+    .single-search-container button{
+
+        font-size: 2.2vw;
+        height: 4vw;
+        width: 10vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
 
     .dual-search-form
     {
         display: flex;
         flex-wrap: wrap;
+        
+        
+    }
+
+    .dual-search-form input{
+        
+        height: 4.0vw; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 2.2vw;
+        display: flex;
+        
+
+    }
+
+    .dual-search-form button{
+
+        font-size: 2.2vw;
+        height: 4vw;
+        width: 10vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         
     }
@@ -106,17 +327,69 @@
     {
         
         font-size: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+    .navbar-container label{
+        font-size: 1.5vw;
+        
     }
 
     .navbar
     {
-        height: 25vh;
+        height: 17vh;
+       
     }
+
+    .single-search-container input{
+
+        height: 3.0vw; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 1.1vw;
+
+    }
+
+    .single-search-container button{
+
+        font-size: 1.1vw;
+        height: 3vw;
+        width: 10vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
 
     .dual-search-form
     {
         display: flex;
         flex-wrap: wrap;
+        
+        
+    }
+
+    .dual-search-form input{
+        
+        height: 3.0vw; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 1.1vw;
+
+    }
+
+    .dual-search-form button{
+
+        font-size: 1.1vw;
+        height: 3vw;
+        width: 10vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         
     }
@@ -131,17 +404,74 @@
     {
         
         font-size: 3vh;
+        margin-bottom: 5vh;
+    }
+
+    .navbar-container label{
+        font-size: 1.5vw;
+        
     }
 
     .navbar
     {
-        height: 25vh;
+        
+        height: 16vh;
     }
 
+
+    .single-search-container input{
+
+        height: 2.2vw; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 1.1vw;
+
+    }
+
+    .single-search-container button{
+
+        font-size: 1.1vw;
+        height: 2.2vw;
+        width: 10vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+     
     .dual-search-form
     {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 3vw;
+        
+        
+    }
+
+
+    .dual-search-form input{
+        
+        height: 2.2vw; 
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        font-size: 1.1vw;
+
+    }
+
+    .dual-search-form button{
+
+        font-size: 1.1vw;
+        height: 2.2vw;
+        width: 10vw;
+        margin-left: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         
     }
@@ -155,7 +485,8 @@
 
     .navbar
     {
-        height: 20vh;
+        height: 16vh;
+        margin-bottom: 5vh;
 
     }
 
@@ -165,16 +496,16 @@
         font-size: 3vh;
         display: flex;
         align-items: center;
-    
+        
     
     }
+
+    
 
   
 
     .navbar-container label{
-        font-size: 3vh;
-
- 
+        font-size: 1.5vw;
         
     }
 
@@ -211,23 +542,22 @@
     }
 
 
+    .single-search-container input{
 
-    .search-form input{
-        
         height: 4vh;
-        margin-right: 1vw;
-        margin-left: 1vw;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
         font-size: 2.0vh;
 
     }
 
-    .search-form button{
-        font-size: 3vh;
+    .single-search-container button{
+
+        font-size: 2vh;
         width: 15vw;
-        margin-right: 1vw;
         margin-left: 1vw;
-        
-        
+
+
     }
 
     
@@ -253,9 +583,9 @@
     }
 
     .dual-search-form button{
-        font-size: 3vh;
+
+        font-size: 2vh;
         width: 15vw;
-        
         margin-left: 1vw;
         
         

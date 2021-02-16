@@ -45,6 +45,7 @@ const HomeWeather = (props) => {
               Fav
             </button>
           </form>
+          <a></a>
           <div className="collapse" id="collapseSocial">
             <iframe
               title="facebook share"

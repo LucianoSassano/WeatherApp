@@ -80,24 +80,26 @@ const Navbar = (props) => {
                   </form>
                 </div>
               ) : (
-                <form className="form-inline my-2 my-lg-0">
-                  <input
-                    onChange={props.onChangeSingle}
-                    onKeyPress={props.handleEnter}
-                    className="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Search a location"
-                    aria-label="Search a location"
-                  />
-                  <button
-                    className="btn btn-outline-success my-2 my-sm-0"
-                    type="button"
-                    onClick={props.handleSearchSubmit}
-                    aria-label="search"
-                  >
-                    Search
-                  </button>
-                </form>
+                <div className="single-search-container">
+                  <form className="form-inline my-2 my-lg-0">
+                    <input
+                      onChange={props.onChangeSingle}
+                      onKeyPress={props.handleEnter}
+                      className="form-control mr-sm-2"
+                      type="search"
+                      placeholder="Search a location"
+                      aria-label="Search a location"
+                    />
+                    <button
+                      className="btn btn-outline-success my-2 my-sm-0"
+                      type="button"
+                      onClick={props.handleSearchSubmit}
+                      aria-label="search"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
               )}
             </div>
           </div>
