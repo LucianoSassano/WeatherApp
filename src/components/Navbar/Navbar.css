@@ -60,10 +60,10 @@
     }
 
    .single-search-container button{
+       
     width: 22vw;
     margin-left: 1vw;
     font-size: 4.0vw;
-
 
     }
 
@@ -263,17 +263,18 @@
 
     .single-search-container input{
 
-        height: 4.0vw; 
+        height: 4.0vh; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
         font-size: 2.2vw;
+        
 
     }
 
     .single-search-container button{
 
         font-size: 2.2vw;
-        height: 4vw;
+        height: 4vh;
         width: 10vw;
         margin-left: 1vw;
         display: flex;
@@ -294,19 +295,17 @@
 
     .dual-search-form input{
         
-        height: 4.0vw; 
+        height: 4.0vh; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
         font-size: 2.2vw;
-        display: flex;
         
-
     }
 
     .dual-search-form button{
 
         font-size: 2.2vw;
-        height: 4vw;
+        height: 4vh;
         width: 10vw;
         margin-left: 1vw;
         display: flex;
@@ -343,17 +342,17 @@
 
     .single-search-container input{
 
-        height: 3.0vw; 
+        height: 4.0vh; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
-        font-size: 1.1vw;
+        font-size: 1.5vw;
 
     }
 
     .single-search-container button{
 
-        font-size: 1.1vw;
-        height: 3vw;
+        font-size: 1.5vw;
+        height: 4vh;
         width: 10vw;
         margin-left: 1vw;
         display: flex;
@@ -374,17 +373,17 @@
 
     .dual-search-form input{
         
-        height: 3.0vw; 
+        height: 4.0vh; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
-        font-size: 1.1vw;
+        font-size: 1.5vw;
 
     }
 
     .dual-search-form button{
 
-        font-size: 1.1vw;
-        height: 3vw;
+        font-size: 1.5vw;
+        height: 4vh;
         width: 10vw;
         margin-left: 1vw;
         display: flex;
@@ -421,7 +420,7 @@
 
     .single-search-container input{
 
-        height: 2.2vw; 
+        height: 4.4vh; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
         font-size: 1.1vw;
@@ -431,7 +430,7 @@
     .single-search-container button{
 
         font-size: 1.1vw;
-        height: 2.2vw;
+        height: 4.4vh;
         width: 10vw;
         margin-left: 1vw;
         display: flex;
@@ -456,22 +455,23 @@
 
     .dual-search-form input{
         
-        height: 2.2vw; 
+        height: 4.4vh;
+        font-size: 1.1vw; 
         margin-right: 0.5vw;
         margin-left: 0.5vw;
-        font-size: 1.1vw;
 
     }
 
     .dual-search-form button{
 
+        height: 4.4vh;
         font-size: 1.1vw;
-        height: 2.2vw;
         width: 10vw;
         margin-left: 1vw;
         display: flex;
         justify-content: center;
         align-items: center;
+        
         
         
     }
@@ -493,16 +493,11 @@
     .navbar-container
     {
     
-        font-size: 3vh;
         display: flex;
-        align-items: center;
-        
+        align-items: center;    
     
     }
 
-    
-
-  
 
     .navbar-container label{
         font-size: 1.5vw;
@@ -511,6 +506,7 @@
 
 
     .custom-switch.custom-switch-xl {
+
         padding-bottom: 1rem;
         padding-left: 2.25rem;
         
@@ -518,25 +514,29 @@
     }
 
 
-  
-
     .custom-switch.custom-switch-xl .custom-control-label {
+
         padding-left: 2rem;
         padding-top: 0.5rem;
         
         
     }
     .custom-switch.custom-switch-xl .custom-control-label::before {
+
         border-radius: 1rem;
         height: 2rem;
         width: 3.5rem;
     }
+
     .custom-switch.custom-switch-xl .custom-control-label::after {
+
         border-radius: 2rem;
         height: calc(2rem - 4px);
         width: calc(2rem - 4px);
     }
+
     .custom-switch.custom-switch-xl .custom-control-input:checked ~ .custom-control-label::after {
+
         transform: translateX(1.5rem);
     
     }
@@ -553,6 +553,7 @@
 
     .single-search-container button{
 
+        height: 4vh;
         font-size: 2vh;
         width: 15vw;
         margin-left: 1vw;
@@ -587,6 +588,7 @@
         font-size: 2vh;
         width: 15vw;
         margin-left: 1vw;
+        height: 4vh;
         
         
     }
