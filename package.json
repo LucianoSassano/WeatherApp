@@ -5,6 +5,7 @@
   "dependencies": {
     "@testing-library/react": "^11.2.5",
     "bootstrap": "^4.6.0",
+    "dotenv": "^8.2.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "local-storage": "^2.0.0",

@@ -36,7 +36,13 @@
 
 @media all and (min-width: 280px) {
   .favorites-container .container-data {
-    margin-top: 13vh ;
+  
+    margin-bottom: 0.01vh;
+    background-color:RGBA(43,45,66,0.65);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
   }
 
   .favorites-container .container-data h1 {

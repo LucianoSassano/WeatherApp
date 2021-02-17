@@ -33,8 +33,9 @@ const Navbar = (props) => {
               </ul>
             </div>
 
-            <div className="searchForm">
-              <div className="custom-control custom-switch custom-switch-xl">
+            <div className="search-form">
+              <div id="customSwitchContainer1" className="custom-control custom-switch custom-switch-xl">
+                
                 <input
                   onClick={handleSerchMode}
                   type="checkbox"
@@ -42,6 +43,7 @@ const Navbar = (props) => {
                   id="customSwitch1"
                   aria-label="dual location search toggle button"
                 />
+                
                 <label
                   data-testid="dualSearchBtn"
                   className="custom-control-label"
