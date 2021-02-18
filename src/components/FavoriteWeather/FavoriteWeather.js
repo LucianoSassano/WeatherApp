@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../Weather/Weather.css";
+import "../FavoriteWeather/FavoriteWeather.css";
 
-const Weather = (props) => {
+const FavoriteWeather = (props) => {
   const [location, setLocation] = useState(props);
-  console.log(location);
+ 
 
   const handleDelete = () => {
     const localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
@@ -64,4 +64,4 @@ const Weather = (props) => {
   );
 };
 
-export default Weather;
+export default FavoriteWeather;
