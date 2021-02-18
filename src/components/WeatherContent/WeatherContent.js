@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../WeatherContent/WeatherContent.css";
-import Weather from "../Weather/Weather";
+import FavoriteWeather from "../FavoriteWeather/FavoriteWeather";
 
 const WeatherContent = (props) => {
 
   const [favs, setFavs] = useState([]);
 
-  console.log(favs);
 
   useEffect(() => {
     if (localStorage.length > 0) {
@@ -29,7 +28,7 @@ const WeatherContent = (props) => {
         <div>
           {favs &&
             favs.map((favs, key) => (
-              <Weather
+              <FavoriteWeather
                 key={key}
                 country={favs.country}
                 city={favs.city}

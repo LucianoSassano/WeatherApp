@@ -1,42 +1,66 @@
-/* LARGE SWITCH */
-
-.custom-switch.custom-switch-lg {
-    padding-bottom: 1rem;
-    padding-left: 2.25rem;
-}
-.custom-switch.custom-switch-lg .custom-control-label {
-    padding-left: 0.75rem;
-    padding-top: 0.15rem;
-}
-.custom-switch.custom-switch-lg .custom-control-label::before {
-    border-radius: 1rem;
-    height: 1.5rem;
-    width: 2.5rem;
-}
-.custom-switch.custom-switch-lg .custom-control-label::after {
-    border-radius: 0.65rem;
-    height: calc(1.5rem - 4px);
-    width: calc(1.5rem - 4px);
-}
-.custom-switch.custom-switch-lg .custom-control-input:checked ~ .custom-control-label::after {
-    transform: translateX(1rem);
-}
-
-
-
-
-
-
 
 
 @media all and (min-width: 280px)
 {
-   .navbar-container
-   {
-       margin-bottom: 28vh;
-       font-size: 6vw;
-   }
-
+    navbar-container
+    {
+        margin-bottom: 30vh;
+        font-size: 4vw;
+    }
+ 
+    .single-search-container input{
+ 
+     height: 4vh;
+     width: 90vw;
+     margin-right: auto;
+     margin-left: auto;
+     font-size: 4.0vw;
+ 
+     }
+ 
+    .single-search-container button{
+        
+     width: 22vw;
+     margin-left: 1vw;
+     font-size: 4.0vw;
+ 
+     }
+ 
+ 
+     .dual-search-form
+     {
+         display: flex;
+         flex-wrap: wrap;
+         
+         
+     }
+ 
+     .dual-search-form input{
+         
+         width: 90vw;
+         height: 4.0vh; 
+         margin-right: 0.5vw;
+         margin-left: 0.5vw;
+         font-size: 4.0vw;
+         display: flex;
+        
+         margin-bottom: 0.5vh;
+         
+ 
+     }
+ 
+     .dual-search-form button{
+ 
+         font-size: 4.0vw;
+         height: 4vh;
+         margin-left: 1vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         
+     }
+ 
   
 }
 
@@ -45,8 +69,8 @@
 {
    .navbar-container
    {
-       margin-bottom: 20vh;
-       font-size: 6vw;
+       margin-bottom: 30vh;
+       font-size: 4vw;
    }
 
    .single-search-container input{
@@ -112,7 +136,7 @@
    .navbar-container
    {
        margin-bottom: 28vh;
-       font-size: 6vw;
+       font-size: 4vw;
    }
 
    .single-search-container input{
@@ -175,8 +199,8 @@
 {
    .navbar-container
    {
-       margin-bottom: 35vh;
-       font-size: 6vw;
+       margin-bottom: 40vh;
+       font-size: 4vw;
        
     }
 
@@ -242,24 +266,31 @@
 @media all and (min-width: 768px)
 {
 
-    .navbar-container
+    .navbar-container 
     {
         
         font-size: 3vh;
-        margin-bottom: 22vh;
+        margin-bottom: 30vh;
     }
 
     .navbar-container label{
         font-size: 2.5vw;
-        
+     
     }
 
+    #customSwitchContainer1{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     
+    }
 
     .navbar
     {
         height: 17vh;
     }
+  
 
 
     .single-search-container input{
@@ -316,6 +347,8 @@
         
     }
 
+   
+
     
 }
 
@@ -331,7 +364,9 @@
     }
     
     .navbar-container label{
-        font-size: 2.0vw;
+        font-size: 1.7vw;
+        
+        
         
     }
 
@@ -339,6 +374,16 @@
     {
         height: 17vh;
        
+    }
+
+    #customSwitchContainer1{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
+        padding: 0.7vw;
+    
     }
 
     .single-search-container input{
@@ -408,7 +453,8 @@
     }
 
     .navbar-container label{
-        font-size: 1.5vw;
+        font-size: 1.2vw;
+  
         
     }
 
@@ -416,6 +462,17 @@
     {
         
         height: 16vh;
+    }
+
+    #customSwitchContainer1{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+    
     }
 
 
@@ -505,6 +562,18 @@
         
     }
 
+    #customSwitchContainer1{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+    
+    }
+
+
 
     .custom-switch.custom-switch-xl {
 
@@ -518,7 +587,7 @@
     .custom-switch.custom-switch-xl .custom-control-label {
 
         padding-left: 2rem;
-        padding-top: 0.5rem;
+   
         
         
     }

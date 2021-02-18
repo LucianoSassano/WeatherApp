@@ -4,21 +4,21 @@ import ReactDOM from 'react-dom';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 
-import Weather from './Weather.js';
+import FavoriteWeather from './FavoriteWeather.js';
 
 
 afterEach(cleanup);
 
-it('Weather renders correctly', () => {
+it('FavoriteWeather renders correctly', () => {
 
     const div = document.createElement("div");
-    ReactDOM.render(<Weather></Weather>, div)
+    ReactDOM.render(<FavoriteWeather></FavoriteWeather>, div)
 })
 
 
 it("Weather component matches snapshot", () => {
 
-    const weather = renderer.create(<Weather></Weather>).toJSON();
-    expect(weather).toMatchSnapshot();
+    const favoriteWeather = renderer.create(<FavoriteWeather></FavoriteWeather>).toJSON();
+    expect(favoriteWeather).toMatchSnapshot();
 
 })

@@ -1,6 +1,7 @@
+
 async function getLocationWeather(search) {
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`;
+    const url = `${process.env.REACT_APP_OPEN_WEATHER_URL}/data/2.5/weather?q=${search}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
     try{
 

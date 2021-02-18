@@ -45,10 +45,11 @@ exports[`Favorite component matches snapshot 1`] = `
           </ul>
         </div>
         <div
-          className="searchForm"
+          className="search-form"
         >
           <div
             className="custom-control custom-switch custom-switch-xl"
+            id="customSwitchContainer1"
           >
             <input
               aria-label="dual location search toggle button"
