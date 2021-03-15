@@ -6,9 +6,21 @@ async function getLocationWeather(search) {
     try{
 
         const response = await fetch(url);
-        const jsonResponse = response.json();
-        const results = await jsonResponse;
-        
+
+        let results;
+
+        if(response.status == 200){
+
+            const jsonResponse = response.json();
+            results = await jsonResponse;
+
+        }else{
+            
+            alert('Error : Location not found');
+            results = [];
+        }
+
+       
         return results;
 
     }catch(error){
