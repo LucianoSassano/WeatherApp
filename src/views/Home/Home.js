@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "../Home/Home.css";
 
 import HomeWeather from "../../components/HomeWeather/HomeWeather.js";
@@ -25,19 +25,27 @@ const Home = () => {
   const handleSubmit = (e) => {
     setSecondWeather([]);
     e.preventDefault();
+
     getLocationWeather(search).then((results) => {
-      setWeather(results);
+      if (typeof results === "object" && results !== null) {
+        setWeather(results);
+      }
     });
   };
 
   const handleDualSubmit = (e) => {
     e.preventDefault();
+
     getLocationWeather(search).then((results) => {
-      setWeather(results);
+      if (typeof results === "object" && results !== null) {
+        setWeather(results);
+      }
     });
 
     getLocationWeather(secondSerch).then((results) => {
-      setSecondWeather(results);
+      if (typeof results === "object" && results !== null) {
+        setSecondWeather(results);
+      }
     });
   };
 
@@ -45,8 +53,11 @@ const Home = () => {
     setSecondWeather([]);
     if (e.key === "Enter" || e.charCode === 13) {
       e.preventDefault();
+
       getLocationWeather(search).then((results) => {
-        setWeather(results);
+        if (typeof results === "object" && results !== null) {
+          setWeather(results);
+        }
       });
     }
   };
@@ -55,15 +66,17 @@ const Home = () => {
     if (e.key === "Enter" || e.charCode === 13) {
       e.preventDefault();
       getLocationWeather(search).then((results) => {
-        setWeather(results);
+        if (typeof results === "object" && results !== null) {
+          setWeather(results);
+        }
       });
 
       getLocationWeather(secondSerch).then((results) => {
-        setSecondWeather(results);
+        if (typeof results === "object" && results !== null) {
+          setSecondWeather(results);
+        }
       });
-
     }
-
   };
 
   const handleFavorite = (weather) => {
@@ -72,15 +85,15 @@ const Home = () => {
       city: weather.name,
       averageTemp: weather.main.temp,
       description: weather.weather[0].main,
-      detail:weather.weather[0].description,
-      icon:weather.weather[0].icon
+      detail: weather.weather[0].description,
+      icon: weather.weather[0].icon,
     };
     let userFavs = [];
 
     if (localStorage.length > 0) {
-      const LocalStorageFavs = JSON.parse(localStorage.getItem("favorites"));
-      if (Array.isArray(LocalStorageFavs)) {
-        userFavs = LocalStorageFavs;
+      const localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
+      if (Array.isArray(localStorageFavs)) {
+        userFavs = localStorageFavs;
         userFavs.push(userWeather);
         localStorage.setItem("favorites", JSON.stringify(userFavs));
       }
@@ -92,8 +105,6 @@ const Home = () => {
     }
   };
 
-
-  
   return (
     <>
       <div className="home-container">
@@ -105,7 +116,7 @@ const Home = () => {
           handleEnter={handleEnterKey}
           handleDualEnter={handleDualEnterKey}
         />
-        {typeof weather.main != "undefined" ? (
+        {weather.main !== undefined ? (
           <HomeWeather
             handleFav={handleFavorite}
             setFav={setFavorite}
@@ -114,7 +125,7 @@ const Home = () => {
         ) : (
           ""
         )}
-        {typeof secondWeather.main != "undefined" ? (
+        {secondWeather.main !== undefined ? (
           <HomeWeather
             handleFav={handleFavorite}
             setFav={setFavorite}
