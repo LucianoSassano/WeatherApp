@@ -66,3 +66,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
+## Change and future improvements:
+
+This project is still under develop and modifications need to be done
+
+### More Urgent:
+
+- Fix My Favorites bug (currentnly not being able to add one fav).
+- Add search functionality in My Favorites.
+
+### To improve or fix:
+
+- Improve unit tests (check API response and give feedback to the user, test localStorage behavior).
+- Give the user the option to choose the desired weather metric.
+- Review for typeO's, hardcoded and repeated code.
+- Image size.
+- Give pr's a more meanningfull name and description of what is does.
+- Lock libraries version once the project is ready for deploy.
+
+### In the future:
+
+- Build and deploy to GitHub Pages.
+- Show project test coverage.
+
