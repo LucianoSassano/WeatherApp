@@ -30,7 +30,9 @@ WeatherApp is a SPA ment to provide users a way to access climatological inforam
 
 After downloading all the required resources and generating your own API key you will need to set this on the .env file.<br />
 This repository contains a sample .env file called ".env_sample".<br /> 
-Here you should replace the variable value corresponding to the API key with your own in order for the app to work.
+Here you should replace the variable value corresponding to the API key with your own in order for the app to work.<br />
+
+<img src="src/resources/setup.png">
       
       
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
