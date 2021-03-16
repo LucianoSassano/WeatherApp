@@ -7,6 +7,7 @@ WeatherApp is a SPA ment to provide users a way to access climatological inforam
 
   * [Visual Studio Code](https://code.visualstudio.com)
   * [Node Package Manager](https://nodejs.org)
+  * [Open Weather API key](https://openweathermap.org/)
   * [GIT](https://git-scm.com/) (recommended) -> with git is easier to clone repositories once you learned how to use it , if you don't want to use this tool you       can download the repository in zip format .
 
     -For Ubuntu run the following commands in the terminal:
@@ -25,6 +26,11 @@ WeatherApp is a SPA ment to provide users a way to access climatological inforam
       
       3- Open the command prompt and type git --version (if correctly installed it should display the current git version).
       
+## Setup:
+
+After downloading all the required resources and generating your own API key you will need to set this on the .env file.<br />
+This repository contains a sample .env file called ".env_sample".<br /> 
+Here you should replace the variable value corresponding to the API key with your own in order for the app to work.
       
       
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
