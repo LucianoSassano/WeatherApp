@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../Home/Home.css";
-
 import HomeWeather from "../../components/HomeWeather/HomeWeather.js";
 import Navbar from "../../components/Navbar/Navbar";
 import { getLocationWeather } from "../../services/WheaterApi";
+import Tab from "../../components/Tab/Tab.js"
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -116,7 +116,12 @@ const Home = () => {
           handleEnter={handleEnterKey}
           handleDualEnter={handleDualEnterKey}
         />
+
+
+        {typeof weather.main != undefined ? (
+
         {weather.main !== undefined ? (
+
           <HomeWeather
             handleFav={handleFavorite}
             setFav={setFavorite}
@@ -125,7 +130,11 @@ const Home = () => {
         ) : (
           ""
         )}
+
+        {typeof secondWeather.main != undefined ? (
+
         {secondWeather.main !== undefined ? (
+
           <HomeWeather
             handleFav={handleFavorite}
             setFav={setFavorite}

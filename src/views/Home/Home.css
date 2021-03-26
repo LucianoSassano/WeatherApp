@@ -277,6 +277,10 @@
     display: flex;
     justify-content: space-around;
   }
+
+  .home-container .tab-container{
+    margin-top: 16vh;
+  }
 }
 
 @media all and (min-width: 1920px) {
