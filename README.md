@@ -7,6 +7,7 @@ WeatherApp is a SPA ment to provide users a way to access climatological inforam
 
   * [Visual Studio Code](https://code.visualstudio.com)
   * [Node Package Manager](https://nodejs.org)
+  * [Open Weather API key](https://openweathermap.org/)
   * [GIT](https://git-scm.com/) (recommended) -> with git is easier to clone repositories once you learned how to use it , if you don't want to use this tool you       can download the repository in zip format .
 
     -For Ubuntu run the following commands in the terminal:
@@ -25,6 +26,13 @@ WeatherApp is a SPA ment to provide users a way to access climatological inforam
       
       3- Open the command prompt and type git --version (if correctly installed it should display the current git version).
       
+## Setup:
+
+After downloading all the required resources and generating your own API key you will need to set this on the .env file.<br />
+This repository contains a sample .env file called ".env_sample".<br /> 
+Here you should replace the variable value corresponding to the API key with your own in order for the app to work.<br />
+
+<img src="src/resources/setup.png">
       
       
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -65,4 +73,28 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+
+## Change and future improvements:
+
+This project is still under develop and modifications need to be done
+
+### More Urgent:
+
+- Fix My Favorites bug (currentnly not being able to add one fav).
+- Add search functionality in My Favorites.
+
+### To improve or fix:
+
+- Improve unit tests (check API response and give feedback to the user, test localStorage behavior).
+- Give the user the option to choose the desired weather metric.
+- Review for typeO's, hardcoded and repeated code.
+- Image size.
+- Give pr's a more meanningfull name and description of what is does.
+- Lock libraries version once the project is ready for deploy.
+
+### In the future:
+
+- Build and deploy to GitHub Pages.
+- Show project test coverage.
 

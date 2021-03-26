@@ -25,6 +25,25 @@ async function getLocationWeatherWeekly(search) {
     const jsonResponse = response.json();
     const results = await jsonResponse;
 
+        const response = await fetch(url);
+
+        let results;
+
+        if(response.status == 200){
+
+            const jsonResponse = response.json();
+            results = await jsonResponse;
+
+        }else{
+            
+            alert('Error : Location not found');
+            results = [];
+        }
+
+       
+        return results;
+
+
     return results;
 
   } catch (error) {
