@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Tab from "../../components/Tab/Tab.js"
 
 const HomeWeather = (props) => {
   const [weather, setWeather] = useState([]);
@@ -15,6 +16,7 @@ const HomeWeather = (props) => {
     <>
       {typeof weather.main != "undefined" ? (
         <div className=" container-data">
+          <Tab/>
           <h1>
             {weather.name},{weather.sys.country}
           </h1>
@@ -45,7 +47,7 @@ const HomeWeather = (props) => {
               Fav
             </button>
           </form>
-          <a></a>
+          
           <div className="collapse" id="collapseSocial">
             <iframe
               title="facebook share"
