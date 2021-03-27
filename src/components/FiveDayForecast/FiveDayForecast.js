@@ -9,8 +9,7 @@ const FiveDayForecast = () => {
 
   useEffect(() => {
     getLocationWeatherFiveDays("Paris").then((results) => {
-
-    console.log(results);
+      
       let dateArray = [];
       let tempArray = [];
 

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../HomeWeather/HomeWeather.css";
 import LineChart from "../LineChart/LineChart.js";
-import FiveDayForecast from "../FiveDayForecast/FiveDayForecast.js"
+import FiveDayForecast from "../FiveDayForecast/FiveDayForecast.js";
+import WeatherLocation from "../WeatherLocation/WeatherLocation.js";
 
 const HomeWeather = (props) => {
   const [weather, setWeather] = useState([]);
-  const [visibility, setVisibility] = useState(true);
   const [toggleState, setToggleState] = useState(1);
+  
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -18,10 +19,6 @@ const HomeWeather = (props) => {
 
   const handleFavorite = () => {
     props.handleFav(weather);
-  };
-
-  const toggleWeatherDisplay = () => {
-    setVisibility(!visibility);
   };
 
   return (
@@ -47,10 +44,20 @@ const HomeWeather = (props) => {
             >
               7 Day week
             </button>
+            <button
+              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(4)}
+            >
+              Maps
+            </button>
           </div>
 
           <div className="content-tabs">
-            <div className={toggleState === 1 ? "content  active-content" : "content"}>
+            <div
+              className={
+                toggleState === 1 ? "content  active-content" : "content"
+              }
+            >
               <>
                 <h1>
                   {weather.name},{weather.sys.country}
@@ -99,11 +106,29 @@ const HomeWeather = (props) => {
                 </div>
               </>
             </div>
-            <div className={toggleState === 2 ? "content  active-content" : "content"}>
-              <FiveDayForecast/>
+            <div
+              className={
+                toggleState === 2 ? "content  active-content" : "content"
+              }
+            >
+              <FiveDayForecast />
             </div>
-            <div className={toggleState === 3 ? "content  active-content" : "content"}>
-              <LineChart/>
+            <div
+              className={
+                toggleState === 3 ? "content  active-content" : "content"
+              }
+            >
+              <LineChart />
+            </div>
+            <div
+              className={
+                toggleState === 4 ? "content  active-content" : "content"
+              }
+            >
+              <WeatherLocation 
+              longitude={weather.coord.lon}
+              latitude={weather.coord.lat}
+              />
             </div>
           </div>
         </div>

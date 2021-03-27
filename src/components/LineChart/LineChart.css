@@ -5,7 +5,30 @@
 
 .lineChart-container .canvas-container{
 
+    padding-top: 5vh;
     height: 45vh;
-    width: 38vw;
+    width: 36vw;
     
+}
+
+
+@media all and (min-width: 1024px) {
+
+
+    .lineChart-container{
+        height: 52vh;
+        width: 40vw;
+    }
+    
+    .lineChart-container .canvas-container{
+    
+        padding-top: 5vh;
+        height: 45vh;
+        width: 47vw;
+        padding-left: auto;
+        padding-right: auto;
+        
+    }
+
+
 }

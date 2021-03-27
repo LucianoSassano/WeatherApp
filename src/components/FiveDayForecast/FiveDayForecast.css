@@ -5,7 +5,37 @@
 
 .fiveDay-container .canvas-container{
 
+    padding-top: 5vh;
     height: 45vh;
-    width: 38vw;
+    width: 37vw;
+    padding-left: auto;
+    padding-right: auto;
     
+}
+
+
+@media all and (min-width: 1024px) {
+
+
+    .fiveDay-container{
+        height: 52vh;
+        width: 40vw;
+    }
+    
+    .fiveDay-container .canvas-container{
+    
+        padding-top: 5vh;
+        height: 45vh;
+        width: 47vw;
+        padding-left: auto;
+        padding-right: auto;
+        
+    }
+    
+
+
+
+
+
+
 }

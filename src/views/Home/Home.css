@@ -42,7 +42,6 @@
 
   .home-container .container-data {
     margin-bottom: 12vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -58,6 +57,11 @@
   }
   .home-container .container-data h3 {
     font-size: 12vw;
+  }
+
+  .home-container .container-data .btn-primary {
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 2vw;
   }
 }
 
@@ -65,7 +69,6 @@
   .home-container .container-data {
     
     margin-bottom: 17vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -80,6 +83,11 @@
   }
   .home-container .container-data h3 {
     font-size: 12vw;
+  }
+
+  .home-container .container-data .btn-primary {
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 2vw;
   }
 
   .home-container .container-data .button-form{
@@ -93,7 +101,6 @@
 
   .home-container .container-data {
     margin-bottom: 25vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -101,18 +108,18 @@
   }
 
   .home-container .container-data h1 {
-    font-size: 15vw;
+    font-size: 13vw;
   }
   .home-container .container-data h2 {
-    font-size: 13vw;
+    font-size: 11vw;
   }
   .home-container .container-data h3 {
-    font-size: 13vw;
+    font-size: 11vw;
   }
 
   .home-container .container-data .btn-primary {
-    margin: 9%;
-    font-size: 7vw;
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 6vw;
   }
 
   .home-container .container-data .button-form{
@@ -125,11 +132,10 @@
 
   .home-container .container-data {
     margin-bottom: 20vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    width: 60vw;
   }
 
   .home-container .container-data h1 {
@@ -147,8 +153,8 @@
   }
 
   .home-container .container-data .btn-primary {
-    margin: 9%;
-    font-size: 4vw;
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 5vw;
   }
   .home-container .container-data .button-form{
     display: flex;
@@ -160,7 +166,6 @@
   
   .home-container .container-data {
     margin-bottom: 17vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -168,24 +173,24 @@
   }
 
   .home-container .container-data h1 {
-    font-size: 9vw;
-    padding-top: 4vh;
+    font-size: 7vw;
+    padding-top: 3vh;
   }
   .home-container .container-data h2 {
-    font-size: 7vw;
+    font-size: 5vw;
   }
   .home-container .container-data h3 {
-    font-size: 7vw;
+    font-size: 5vw;
   }
 
   .home-container .container-data h4{
 
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   .home-container .container-data .btn-primary {
-    margin: 9%;
-    font-size: 5vw;
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 4vw;
   }
 
   .home-container .container-data .button-form{
@@ -201,11 +206,10 @@
   .home-container .container-data {
     margin-top: 25vh;
     margin-bottom: 10vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 50vw;
   }
 
   .home-container .container-data h1 {
@@ -223,11 +227,9 @@
     font-size: 2vw;
   }
 
-
-
   .home-container .container-data .btn-primary {
-    margin: 5%;
-    font-size: 4vw;
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 3vw;
   }
 
   .home-container .container-data .button-form{
@@ -241,7 +243,6 @@
   .home-container .container-data {
 
     margin-bottom: 10vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -269,7 +270,7 @@
   }
 
   .home-container .container-data .btn-primary {
-    margin: 4%;
+    margin: 2vh 2vw 2vh 2vw;
     font-size: 2vw;
   }
   
@@ -283,7 +284,6 @@
   
   .home-container .container-data {
     margin-bottom: 10vh;
-    background-color:RGBA(43,45,66,0.65);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -311,8 +311,8 @@
   }
 
   .home-container .container-data .btn-primary {
-    margin: 4vw;
-    font-size: 3vw;
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 2vw;
   }
 
   .home-container .container-data .button-form{
