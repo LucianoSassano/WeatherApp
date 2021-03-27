@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../HomeWeather/HomeWeather.css";
 import LineChart from "../LineChart/LineChart.js";
-import MinutesForecastChart from "../MinutesForecastChart/MinutesForecastChart.js"
 import FiveDayForecast from "../FiveDayForecast/FiveDayForecast.js"
 
 const HomeWeather = (props) => {
