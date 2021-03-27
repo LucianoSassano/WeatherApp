@@ -32,4 +32,46 @@ async function getLocationWeatherWeekly(search) {
   }
 }
 
-export { getLocationWeather, getLocationWeatherWeekly };
+async function getLocationWeatherByMinute(search) {
+  try {
+    const locationInfo = await getLocationWeather(search);
+
+    const latitude = locationInfo.coord.lat;
+    const longitude = locationInfo.coord.lon;
+
+    const url = `${process.env.REACT_APP_OPEN_WEATHER_URL}/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,daily&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+
+    const response = await fetch(url);
+    const jsonResponse = response.json();
+    const results = await jsonResponse;
+    
+
+    return results;
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function getLocationWeatherFiveDays(search) {
+  try {
+    const locationInfo = await getLocationWeather(search);
+
+    const latitude = locationInfo.coord.lat;
+    const longitude = locationInfo.coord.lon;
+
+    const url = `${process.env.REACT_APP_OPEN_WEATHER_URL}/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+
+    const response = await fetch(url);
+    const jsonResponse = response.json();
+    const results = await jsonResponse;
+    
+
+    return results;
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export { getLocationWeather, getLocationWeatherWeekly, getLocationWeatherFiveDays ,getLocationWeatherByMinute };

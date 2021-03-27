@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./DataVisualization.css";
-import Navbar from "../../components/Navbar/Navbar";
+import "./LineChart.css";
 import { Line } from "react-chartjs-2";
-import { getLocationWeatherWeekly } from "../../services/WheaterApi";
+import { getLocationWeatherWeekly } from  "../../services/WheaterApi.js";
 
-const DataVisualization = () => {
+const LineChart = () => {
   const [xLabels, setxDays] = useState([]);
   const [yData, setyData] = useState([]);
 
@@ -36,8 +35,8 @@ const DataVisualization = () => {
 
   return (
     <>
-      <div className="dataVisualzation-container">
-        <Navbar className="dataVisualzation-nav" />
+      <div className="lineChart-container">
+        
         <div className="canvas-container">
           <Line
             data={{
@@ -46,14 +45,7 @@ const DataVisualization = () => {
                 {
                   label: " average temperature over the day in celcius",
                   data: yData,
-                  backgroundColor: [
-                    "rgba(255, 99, 132, 0.2)",
-                    "rgba(54, 162, 235, 0.2)",
-                    "rgba(255, 206, 86, 0.2)",
-                    "rgba(75, 192, 192, 0.2)",
-                    "rgba(153, 102, 255, 0.2)",
-                    "rgba(255, 159, 64, 0.2)",
-                  ],
+                  backgroundColor:"rgba(255, 99, 132, 0.2)",
                   borderColor: [
                     "rgba(255, 99, 132, 1)",
                     "rgba(54, 162, 235, 1)",
@@ -61,6 +53,8 @@ const DataVisualization = () => {
                     "rgba(75, 192, 192, 1)",
                     "rgba(153, 102, 255, 1)",
                     "rgba(255, 159, 64, 1)",
+                    "rgba(65, 191, 208, 1)",
+                    "rgba(65, 87, 208, 1)",
                   ],
 
                   borderWidth: 2,
@@ -90,4 +84,4 @@ const DataVisualization = () => {
   );
 };
 
-export default DataVisualization;
+export default LineChart;

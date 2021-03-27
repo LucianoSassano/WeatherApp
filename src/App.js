@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../src/views/Home/Home";
 import Favorite from "./views/Favorite/Favorite.js";
-import DataVisualization from "./views/DataVisualization/DataVisualization.js"
+
 import "./App.css";
 
 
@@ -13,9 +13,6 @@ function App() {
         <Switch>
           <Route path="/favorites">
             <Favorite />
-          </Route>
-          <Route path="/dataVisualization">
-            <DataVisualization/>
           </Route>
           <Route path="/">
             <Home/>
