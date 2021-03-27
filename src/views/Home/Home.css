@@ -245,17 +245,17 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 38vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 6vw;
+    font-size: 4vw;
   }
   .home-container .container-data h2 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .home-container .container-data h3 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .home-container .container-data h4{
@@ -270,7 +270,7 @@
 
   .home-container .container-data .btn-primary {
     margin: 4%;
-    font-size: 4vw;
+    font-size: 2vw;
   }
   
   .home-container .container-data .button-form{
