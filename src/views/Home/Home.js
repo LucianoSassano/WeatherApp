@@ -116,7 +116,10 @@ const Home = () => {
           handleEnter={handleEnterKey}
           handleDualEnter={handleDualEnterKey}
         />
-        {weather.main !== undefined ? (
+      
+       
+
+        {typeof weather.main != "undefined" ? (
           <HomeWeather
             handleFav={handleFavorite}
             setFav={setFavorite}
@@ -125,7 +128,7 @@ const Home = () => {
         ) : (
           ""
         )}
-        {secondWeather.main !== undefined ? (
+        {typeof secondWeather.main != "undefined" ? (
           <HomeWeather
             handleFav={handleFavorite}
             setFav={setFavorite}

@@ -1,4 +1,4 @@
-.favorites-container {
+#favorites-container {
   background: url(../../resources/pink-landscape.png) no-repeat;
   overflow: scroll;
   background-size: cover;
@@ -12,7 +12,7 @@
   width: 100vw;
 }
 
-.container-data {
+.favorites-data {
   text-align: center;
   height: 10vh;
   width: 100vw;
@@ -20,22 +20,23 @@
   color: #eae6ec;
   text-shadow: 1px 1px #212021;
   margin-bottom: 6%;
+  background-color:RGBA(43,45,66,0.65);
 }
 
-.container-data h1 {
+.favorites-data h1 {
   font-size: 3vw;
 }
 
-.container-data h2 {
+.favorites-data h2 {
   font-size: 2vw;
 }
 
-.container-data h3 {
+.favorites-data h3 {
   font-size: 2vw;
 }
 
 @media all and (min-width: 280px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
   
     margin-bottom: 0.01vh;
     background-color:RGBA(43,45,66,0.65);
@@ -45,24 +46,24 @@
     width: 70vw;
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 11vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 9vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 9vw;
   }
 
-  .favorites-container .container-data .btn-danger {
+  #favorites-container .favorites-data .btn-danger {
     margin: 2%;
     font-size: 4vw;
   }
 }
 
 @media all and (min-width: 320px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
     
     margin-bottom: 0.01vh;
     background-color:RGBA(43,45,66,0.65);
@@ -72,19 +73,19 @@
     width: 70vw;
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 10vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 9vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 9vw;
   }
 }
 
 @media all and (min-width: 375px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
     margin-top: 11vh;
     margin-bottom: 1vh;
     background-color:RGBA(43,45,66,0.65);
@@ -94,19 +95,19 @@
     width: 70vw;
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 8vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 6vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 6vw;
   }
 }
 
 @media all and (min-width: 425px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
    
     margin-bottom: 0.3vh;
    
@@ -117,13 +118,13 @@
     width: 70vw;
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 8vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 6vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 6vw;
   }
 }
@@ -131,7 +132,7 @@
 @media all and (min-width: 768px) {
 
 
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
     margin-top: 2.5vh;
     margin-bottom: 0.3vh;
     background-color:RGBA(43,45,66,0.65);
@@ -141,24 +142,24 @@
     width: 40vw;
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 8vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 6vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 6vw;
   }
 
-  .favorites-container .container-data .btn-danger {
+  #favorites-container .favorites-data .btn-danger {
     margin: 2%;
     font-size: 3vw;
   }
 }
 
 @media all and (min-width: 1024px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
   
   
     margin-bottom: 0.3vh;
@@ -166,77 +167,77 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 30vw;
 
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 6vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 4vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 4vw;
   }
 
-  .favorites-container .container-data .btn-danger {
+  #favorites-container .favorites-data .btn-danger {
     margin: 2%;
     font-size: 2vw;
   }
 }
 
 @media all and (min-width: 1440px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
 
 
-    margin-bottom: 0.03vh;
+    margin-bottom: 3vh;
     background-color:RGBA(43,45,66,0.65);
-    height: 100%;
+    height: 60vh;
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 30vw;
 
   }
 
-  .favorites-container .container-data h1 {
-    font-size: 5vw;
+  #favorites-container .favorites-data h1 {
+    font-size: 6vw;
   }
-  .favorites-container .container-data h2 {
-    font-size: 3vw;
+  #favorites-container .favorites-data h2 {
+    font-size: 4vw;
   }
-  .favorites-container .container-data h3 {
-    font-size: 3vw;
+  #favorites-container .favorites-data h3 {
+    font-size: 4vw;
   }
 
-  .favorites-container .container-data .btn-primary {
+  #favorites-container .favorites-data .btn-primary {
     margin: 4%;
     font-size: 3vw;
   }
 }
 
 @media all and (min-width: 1920px) {
-  .favorites-container .container-data {
+  #favorites-container .favorites-data {
     margin-bottom: 0.03vh;
     background-color:RGBA(43,45,66,0.65);
-    height: 100%;
+    height: 50vh;
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 25vw;
 
   }
 
-  .favorites-container .container-data h1 {
+  #favorites-container .favorites-data h1 {
     font-size: 4vw;
   }
-  .favorites-container .container-data h2 {
+  #favorites-container .favorites-data h2 {
     font-size: 3vw;
   }
-  .favorites-container .container-data h3 {
+  #favorites-container .favorites-data h3 {
     font-size: 3vw;
   }
 
-  .favorites-container .container-data .btn-danger {
+  #favorites-container .favorites-data .btn-danger {
     margin: 1%;
     font-size: 1vw;
   }

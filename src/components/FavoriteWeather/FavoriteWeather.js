@@ -23,7 +23,7 @@ const FavoriteWeather = (props) => {
     <>
       <div data-testid="favoriteWeather" className="weather-container">
         {location.city ? (
-          <div className="container-data" aria-label="weather-result">
+          <div className="favorites-data" aria-label="weather-result">
             <h1
               aria-label="city name and country of city"
               value={(location.city, location.country)}

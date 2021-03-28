@@ -1,17 +1,15 @@
 import React from "react";
-import "./Favorite.css";
+import "../Favorite/Favorite.css";
 import Navbar from "../../components/Navbar/Navbar";
 import WeatherContent from "../../components/WeatherContent/WeatherContent";
 
 const Favorite = () => {
-  
-
   return (
     <>
-      <div className="favorites-container">
+      <div id="favorites-container">
         <Navbar className="favorites-nav" />
-        <div >
-          <WeatherContent className="container-data" />
+        <div>
+          <WeatherContent className="favorites-data" />
         </div>
       </div>
     </>
