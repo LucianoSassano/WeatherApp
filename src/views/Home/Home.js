@@ -88,8 +88,9 @@ const Home = () => {
       icon: weather.weather[0].icon,
     };
     let userFavs = [];
+ 
 
-    if (localStorage.length > 0) {
+    if (localStorage.getItem("favorites") != 0 && localStorage.getItem("favorites") != null ) {
       const localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
       if (Array.isArray(localStorageFavs)) {
         userFavs = localStorageFavs;
@@ -98,7 +99,7 @@ const Home = () => {
       }
     }
 
-    if (localStorage.length < 1) {
+    if (localStorage.getItem("favorites") < 1 || localStorage.getItem("favorites") == null) {
       userFavs.push(userWeather);
       localStorage.setItem("favorites", JSON.stringify(userFavs));
     }

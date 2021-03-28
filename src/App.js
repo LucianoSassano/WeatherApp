@@ -10,12 +10,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/favorites">
-            <Favorite />
-          </Route>
-          <Route path="/">
-            <Home/>
-          </Route>
+          <Route exact path="/favorites" component={Favorite}/>
+          <Route exact path="/" component={Home}/>
         </Switch>
       </Router>
     </div>

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import GpsMarker from "../../resources/gps.svg";
 import "../WeatherLocation/WeatherLocation.css";
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 
 const WeatherLocation = (props) => {
   const [viewport, setViewport] = useState({

@@ -2,7 +2,7 @@
 async function getLocationWeather(search) {
  
 
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`;
 
 
   try{
@@ -40,7 +40,7 @@ async function getLocationWeatherWeekly(search) {
     const latitude = locationInfo.coord.lat;
     const longitude = locationInfo.coord.lon;
 
-    const url = `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&appid=e0587d27e5b47cb13ba1b093e60738f7&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&appid=e0587d27e5b47cb13ba1b093e60738f7&units=metric`;
 
     const response = await fetch(url);
     const jsonResponse = response.json();
@@ -63,7 +63,7 @@ async function getLocationWeatherFiveDays(search) {
     const latitude = locationInfo.coord.lat;
     const longitude = locationInfo.coord.lon;
 
-    const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=e0587d27e5b47cb13ba1b093e60738f7&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=e0587d27e5b47cb13ba1b093e60738f7&units=metric`;
 
     const response = await fetch(url);
     const jsonResponse = response.json();

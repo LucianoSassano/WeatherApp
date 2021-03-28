@@ -17,6 +17,7 @@ const HomeWeather = (props) => {
   }, [props.forecast]);
 
   const handleFavorite = () => {
+    console.log('fav');
     props.handleFav(weather);
   };
 
