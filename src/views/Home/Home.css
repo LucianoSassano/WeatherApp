@@ -41,11 +41,11 @@
 @media all and (min-width: 280px) {
 
   .home-container .container-data {
-    margin-bottom: 12vh;
-    height: 100%;
+    margin-top: 30vh;
+    height: 50vh;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 90vw;
     
   }
 
@@ -60,19 +60,19 @@
   }
 
   .home-container .container-data .btn-primary {
-    margin: 2vh 2vw 2vh 2vw;
-    font-size: 2vw;
+    margin: 1vh 6vw 1vh 6vw;
+    font-size: 8vw;
   }
 }
 
 @media all and (min-width: 320px) {
   .home-container .container-data {
     
-    margin-bottom: 17vh;
-    height: 100%;
+
+    height: 50vh;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 90vw;
   }
 
   .home-container .container-data h1 {
@@ -87,7 +87,7 @@
 
   .home-container .container-data .btn-primary {
     margin: 2vh 2vw 2vh 2vw;
-    font-size: 2vw;
+    font-size: 8vw;
   }
 
   .home-container .container-data .button-form{
@@ -100,8 +100,8 @@
 @media all and (min-width: 375px) {
 
   .home-container .container-data {
-    margin-bottom: 25vh;
-    height: 100%;
+
+    height: 50vh;
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
@@ -131,30 +131,29 @@
 @media all and (min-width: 425px) {
 
   .home-container .container-data {
-    margin-bottom: 20vh;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
+    height: 50vh;
+    margin-right: 29vw;
     width: 60vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 8vw;
+    font-size: 14vw;
   }
   .home-container .container-data h2 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .home-container .container-data h3 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
 
   .home-container .container-data h4{
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .home-container .container-data .btn-primary {
-    margin: 2vh 2vw 2vh 2vw;
-    font-size: 5vw;
+    margin: 1vh 2vw 1vh 2vw;
+    font-size: 8vw;
   }
   .home-container .container-data .button-form{
     display: flex;
@@ -165,32 +164,31 @@
 @media all and (min-width: 768px) {
   
   .home-container .container-data {
-    margin-bottom: 17vh;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    
+    height: 50vh;
+    margin-right: 30vw;
     width: 60vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 7vw;
+    font-size: 10vw;
     padding-top: 3vh;
   }
   .home-container .container-data h2 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
   .home-container .container-data h3 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .home-container .container-data h4{
 
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .home-container .container-data .btn-primary {
-    margin: 2vh 2vw 2vh 2vw;
-    font-size: 4vw;
+    margin: 0h 2vw 1vh 0vw;
+    font-size: 6vw;
   }
 
   .home-container .container-data .button-form{
@@ -205,21 +203,20 @@
 
   .home-container .container-data {
     margin-top: 25vh;
-    margin-bottom: 10vh;
+
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
+    margin-right: 70vw;
+    width: 20vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .home-container .container-data h2 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .home-container .container-data h3 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .home-container .container-data h4{
@@ -228,8 +225,8 @@
   }
 
   .home-container .container-data .btn-primary {
-    margin: 2vh 2vw 2vh 2vw;
-    font-size: 3vw;
+    margin: 0vh 2vw 2vh 2vw;
+    font-size: 3.2vw;
   }
 
   .home-container .container-data .button-form{
@@ -241,39 +238,32 @@
 @media all and (min-width: 1440px) {
 
   .home-container .container-data {
-
-    margin-bottom: 10vh;
+    
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 38vw;
+    margin-right: 20vw;
+    width: 60vw;
   }
 
   .home-container .container-data h1 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .home-container .container-data h2 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .home-container .container-data h3 {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .home-container .container-data h4{
-    
-    font-size: 2vw;
-  }
 
-  .home-container .container-data img{
-   
-    height: 10vh;
+    font-size: 2vw;
   }
 
   .home-container .container-data .btn-primary {
-    margin: 2vh 2vw 2vh 2vw;
-    font-size: 2vw;
+    margin: 0vh 1vw 1vh 1vw;
+    font-size: 3vw;
   }
-  
+
   .home-container .container-data .button-form{
     display: flex;
     justify-content: space-around;
@@ -283,11 +273,10 @@
 @media all and (min-width: 1920px) {
   
   .home-container .container-data {
-    margin-bottom: 10vh;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vw;
+
+    height: 40vh;
+    margin-right: 60vw;
+    width: 20vw;
   }
 
   .home-container .container-data h1 {
@@ -302,7 +291,7 @@
   }
 
   .home-container .container-data h4 {
-    font-size: 1vw;
+    font-size: 2vw;
   }
 
   .home-container .container-data img{
@@ -311,8 +300,9 @@
   }
 
   .home-container .container-data .btn-primary {
-    margin: 2vh 2vw 2vh 2vw;
-    font-size: 2vw;
+    margin: 0vh 1vw 1vh 1vw;
+    font-size: 3vw;
+
   }
 
   .home-container .container-data .button-form{

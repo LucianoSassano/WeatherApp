@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import { getLocationWeatherFiveDays } from  "../../services/WheaterApi.js";
-import "./FiveDayForecast.css";
+import "../FiveDayForecast/FiveDayForecast.css";
 
 const FiveDayForecast = () => {
   const [xLabels, setxDays] = useState([]);
   const [yData, setyData] = useState([]);
+  const [weekAvgTemps, setWeekAvgTemps] = useState([]);
 
   useEffect(() => {
     getLocationWeatherFiveDays("Paris").then((results) => {
       
       let dateArray = [];
       let tempArray = [];
+      let weekAvgSum = 0;
 
       results.list.forEach((timestamp) => {
   
@@ -31,7 +33,16 @@ const FiveDayForecast = () => {
 
         dateArray.push(formattedDate);
         tempArray.push(temp);
+        weekAvgSum = weekAvgSum + parseInt(temp) ;
       });
+
+      let i;
+      let supArray = [];
+      for(i=0;i<40;i++){
+        supArray.push(weekAvgSum / 40);
+        
+      }
+      setWeekAvgTemps(supArray);
       setxDays(dateArray);
       setyData(tempArray);
     });
@@ -47,17 +58,28 @@ const FiveDayForecast = () => {
               labels: xLabels,
               datasets: [
                 {
-                  label: " average temperature over the day in celcius",
+                  label: "avg temp in hour on C°",
                   data: yData,
                   backgroundColor:"rgba(255, 99, 132, 0.2)",
-                  borderColor:"rgba(32, 217, 189, 1)",
+                  borderColor:"rgba(255, 99, 132, 1)",
+
+                  borderWidth: 2,
+                },
+                {
+                  label: "avg week temp in C°",
+                  data: weekAvgTemps,
+                  backgroundColor:"rgba(65, 191, 208, 0.1)",
+                  borderColor: [
+                    
+                    "rgba(65, 191, 208, 1)",
+                    
+                  ],
 
                   borderWidth: 2,
                 },
               ],
             }}
-            height={200}
-            width={200}
+           
             options={{
               responsive : true,
               responsiveAnimationDuration: 100,

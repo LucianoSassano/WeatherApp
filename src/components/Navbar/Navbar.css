@@ -2,9 +2,9 @@
 
 @media all and (min-width: 280px)
 {
-    navbar-container
+    .navbar-container
     {
-        margin-bottom: 30vh;
+        margin-bottom: 24vh;
         font-size: 4vw;
     }
  
@@ -69,7 +69,7 @@
 {
    .navbar-container
    {
-       margin-bottom: 30vh;
+       margin-bottom: 25vh;
        font-size: 4vw;
    }
 
@@ -135,7 +135,7 @@
 {
    .navbar-container
    {
-       margin-bottom: 28vh;
+       margin-bottom: 15vh;
        font-size: 4vw;
    }
 
@@ -199,7 +199,7 @@
 {
    .navbar-container
    {
-       margin-bottom: 40vh;
+       margin-bottom: 20vh;
        font-size: 4vw;
        
     }
@@ -270,7 +270,7 @@
     {
         
         font-size: 3vh;
-        margin-bottom: 30vh;
+        margin-bottom: 10vh;
     }
 
     .navbar-container label{
@@ -360,7 +360,7 @@
     {
         
         font-size: 3vh;
-        margin-bottom: 12vh;
+        margin-bottom: 8vh;
     }
     
     .navbar-container label{
@@ -449,7 +449,7 @@
     {
         
         font-size: 3vh;
-        margin-bottom: 5vh;
+       
     }
 
     .navbar-container label{
@@ -460,8 +460,7 @@
 
     .navbar
     {
-        
-        height: 16vh;
+        height: 13vh;
     }
 
     #customSwitchContainer1{

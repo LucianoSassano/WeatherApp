@@ -24,7 +24,7 @@ const WeatherContent = (props) => {
 
   return (
     <>
-      <div className="container" aria-label="forecast list ">
+      <div aria-label="forecast list ">
         <div>
           {favs &&
             favs.map((favs, key) => (

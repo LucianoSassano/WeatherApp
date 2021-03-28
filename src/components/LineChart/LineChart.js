@@ -6,11 +6,13 @@ import { getLocationWeatherWeekly } from  "../../services/WheaterApi.js";
 const LineChart = () => {
   const [xLabels, setxDays] = useState([]);
   const [yData, setyData] = useState([]);
+  const [weekAvgTemps, setWeekAvgTemps] = useState([]);
 
   useEffect(() => {
     getLocationWeatherWeekly("Paris").then((results) => {
       let dateArray = [];
       let tempArray = [];
+      let weekAvgSum = 0;
 
       results.daily.forEach((timestamp) => {
   
@@ -27,9 +29,20 @@ const LineChart = () => {
 
         dateArray.push(formattedDate);
         tempArray.push(temp);
+        weekAvgSum = weekAvgSum + parseInt(temp) ;
+        
       });
+
+      let i;
+      let supArray = [];
+      for(i=0;i<8;i++){
+        supArray.push(weekAvgSum / 8);
+        
+      }
+      setWeekAvgTemps(supArray);
       setxDays(dateArray);
       setyData(tempArray);
+     
     });
   }, []);
 
@@ -43,7 +56,7 @@ const LineChart = () => {
               labels: xLabels,
               datasets: [
                 {
-                  label: " average temperature over the day in celcius",
+                  label: "avg day temp in C°",
                   data: yData,
                   backgroundColor:"rgba(255, 99, 132, 0.2)",
                   borderColor: [
@@ -59,10 +72,21 @@ const LineChart = () => {
 
                   borderWidth: 2,
                 },
+                {
+                  label: "avg week temp in C°",
+                  data: weekAvgTemps,
+                  backgroundColor:"rgba(65, 191, 208, 0.1)",
+                  borderColor: [
+                    
+                    "rgba(65, 191, 208, 1)",
+                    
+                  ],
+
+                  borderWidth: 2,
+                },
               ],
             }}
-            height={200}
-            width={200}
+            
             options={{
               responsive : true,
               responsiveAnimationDuration: 100,

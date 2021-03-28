@@ -4,6 +4,671 @@
     padding: 0;
   }
 
+  
+
+
+  @media all and (min-width: 280px){
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+      
+   
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 41vw;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+    
+  } 
+  
+  @media all and (min-width: 320px){
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 90vw;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+
+  } 
+  
+  @media all and (min-width: 375px){
+
+    .homeWeather-card{
+      width: 80vw;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+      
+      
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 80vw;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+  } 
+  
+  @media all and (min-width: 425px){
+
+    .homeWeather-card{
+      width: 80vw;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+      
+   
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 80vw;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      padding: 20px;
+      width: 80vw;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+  } 
+  
+  @media all and (min-width: 768px){
+
+    .homeWeather-card{
+      width: 80vw;
+      height: 60vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+      
+      margin-bottom: 50vh;
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 80vw;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      padding: 20px;
+      width: 80vw;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+  }
+  
+  
+  @media all and (min-width: 1024px) {
+    
+    .homeWeather-card{
+      width: 80vw;
+      height: 60vh;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+      
+ 
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 80vw;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      padding: 20px;
+      width: 80vw;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+  }
+
+  @media all and (min-width: 1440px){
+
+    .homeWeather-card{
+      
+      width: 60vw;
+      height: 75vh;
+    
+      
+    }
+
+    .container {
+      
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      height: 25vh;
+      width: 100vw;
+      align-content: center;
+      background-color:RGBA(43,45,66,0.65);
+      color: #eae6ec;
+      
+ 
+    }
+    
+    .bloc-tabs {
+      display: flex;
+      width: 60vw;
+      height: 9vh;
+    }
+  
+    .tabs {
+      color: #eae6ec;
+      padding: 2vw;
+      text-align: center;
+      width: 50%;
+      background: rgba(128, 128, 128, 0.210);
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+      box-sizing: content-box;
+      position: relative;
+      outline: none;
+      font-size: 0.9vw;
+    }
+  
+    .tabs:not(:last-child){
+      border-right: 1px solid rgba(0, 0, 0, 0.274);
+    }
+    
+    .active-tabs  {
+      background-color:RGBA(43,45,66,0.85);;
+      border-bottom: 1px solid transparent;
+    }
+    
+    .active-tabs::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 2px);
+      height: 5px;
+      background: rgb(88, 147, 241);
+    }
+    
+    
+
+    button {
+      border: none;
+      
+    }
+    .content-tabs {
+      flex-grow : 1;
+    }
+    .content {
+      background-color:RGBA(43,45,66, 0.85);
+      width: 60vw;
+      height: 100%;
+      display: none;
+    }
+    .content h2 {
+      padding: 0px 0 5px 0px;
+    }
+    .content hr {
+      width: 100px;
+      height: 2px;
+      background: #222;
+      margin-bottom: 5px;
+    }
+    .content p {
+      width: 100%;
+      height: 100%;
+    }
+    .active-content {
+      display: block;
+    }
+  }
+
+@media all and (min-width: 1920px){
+
+
+  .homeWeather-card{
+    width: 60vw;
+    height: 50vh;
+
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -15,24 +680,26 @@
     background-color:RGBA(43,45,66,0.65);
     color: #eae6ec;
     
-    margin-bottom: 25%;
+
   }
   
   .bloc-tabs {
     display: flex;
+    width: 60vw;
   }
 
   .tabs {
     color: #eae6ec;
-    padding: 15px;
+    padding: 2vw;
     text-align: center;
-    width: 50%;
+    width: 60vw;
     background: rgba(128, 128, 128, 0.210);
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
     box-sizing: content-box;
     position: relative;
     outline: none;
+    font-size: 1.2vw;
   }
 
   .tabs:not(:last-child){
@@ -57,7 +724,7 @@
   }
   
   
-  
+
   button {
     border: none;
     
@@ -68,8 +735,8 @@
   .content {
     background-color:RGBA(43,45,66, 0.85);
     padding: 20px;
-    width: 100%;
-    height: 100%;
+    width: 60vw;
+    height: 60vh;
     display: none;
   }
   .content h2 {
@@ -88,3 +755,4 @@
   .active-content {
     display: block;
   }
+}

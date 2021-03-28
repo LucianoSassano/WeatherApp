@@ -1,0 +1,200 @@
+
+
+@media all and (min-width: 280px) {
+
+
+    .weatherLocation-container{
+        width: 80vw;
+        height: 40vh;
+    }
+
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 13vw;
+    
+    }
+
+
+}
+
+
+
+@media all and (min-width: 320px) {
+
+
+    .weatherLocation-container{
+        width: 80vw;
+        height: 50vh;
+    }
+
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 13vw;
+    
+    }
+
+
+}
+
+@media all and (min-width: 375px) {
+
+
+    .weatherLocation-container{
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 13vw;
+    
+    }
+
+
+}
+
+@media all and (min-width: 425px) {
+
+
+    .weatherLocation-container{
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 13vw;
+    
+    }
+
+
+}
+
+
+@media all and (min-width: 768px) {
+
+
+    .weatherLocation-container{
+        width: 75vw;
+        height: 0vh;
+    }
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 7vw;
+    
+    }
+
+
+}
+
+@media all and (min-width: 1024px) {
+
+
+    .weatherLocation-container{
+        width: 77vw;
+        height: 60vh;
+    }
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 6vw;
+    
+    }
+
+
+}
+
+
+@media all and (min-width: 1440px) {
+
+
+    .weatherLocation-container{
+        width: 58vw;
+        height: 75vh;
+    }
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 5vw;
+    
+    }
+
+
+}
+
+
+@media all and (min-width: 1920px) {
+
+
+    .weatherLocation-container{
+        width: 78vw;
+        height: 60vh;
+    }
+
+    .gps-marker{
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .gps-marker img{
+    
+        width: 4vw;
+    
+    }
+
+
+}
