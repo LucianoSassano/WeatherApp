@@ -3,13 +3,14 @@ import "./LineChart.css";
 import { Line } from "react-chartjs-2";
 import { getLocationWeatherWeekly } from  "../../services/WheaterApi.js";
 
-const LineChart = () => {
+const LineChart = (props) => {
   const [xLabels, setxDays] = useState([]);
   const [yData, setyData] = useState([]);
   const [weekAvgTemps, setWeekAvgTemps] = useState([]);
+  
 
   useEffect(() => {
-    getLocationWeatherWeekly("Paris").then((results) => {
+    getLocationWeatherWeekly(props.locationSearch).then((results) => {
       let dateArray = [];
       let tempArray = [];
       let weekAvgSum = 0;
@@ -44,7 +45,7 @@ const LineChart = () => {
       setyData(tempArray);
      
     });
-  }, []);
+  }, [props.locationSearch]);
 
   return (
     <>

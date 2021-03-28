@@ -113,14 +113,16 @@ const HomeWeather = (props) => {
                 toggleState === 2 ? "content  active-content" : "content"
               }
             >
-              <FiveDayForecast />
+              <FiveDayForecast
+               locationSearch={weather.name} />
             </div>
             <div
               className={
                 toggleState === 3 ? "content  active-content" : "content"
               }
             >
-              <LineChart />
+              <LineChart
+              locationSearch={weather.name} />
             </div>
             <div
               className={

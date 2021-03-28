@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Home/Home.css";
-
 import HomeWeather from "../../components/HomeWeather/HomeWeather.js";
 import Navbar from "../../components/Navbar/Navbar";
 import { getLocationWeather } from "../../services/WheaterApi";

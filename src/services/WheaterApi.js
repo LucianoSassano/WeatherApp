@@ -1,31 +1,35 @@
 
 async function getLocationWeather(search) {
+ 
 
-    const url = `${process.env.REACT_APP_OPEN_WEATHER_URL}/data/2.5/weather?q=${search}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
+  const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=e0587d27e5b47cb13ba1b093e60738f7`;
 
-    try{
 
-        const response = await fetch(url);
+  try{
 
-        let results;
+      const response = await fetch(url);
+    
+      let results;
 
-        if(response.status == 200){
+      if(response.status == 200){
 
-            const jsonResponse = response.json();
-            results = await jsonResponse;
+          const jsonResponse = response.json();
+          
+          results = await jsonResponse;
+          
 
-        }else{
-            
-            alert('Error : Location not found');
-            results = [];
-        }
+      }else{
+          
+          alert('Error : Location not found');
+          results = [];
+      }
 
-       
-        return results;
+     
+      return results;
 
-    }catch(error){
-        console.log(error);
-    }
+  }catch(error){
+      console.log(error);
+  }
 
 }
 
@@ -36,7 +40,7 @@ async function getLocationWeatherWeekly(search) {
     const latitude = locationInfo.coord.lat;
     const longitude = locationInfo.coord.lon;
 
-    const url = `${process.env.REACT_APP_OPEN_WEATHER_URL}/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+    const url = `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&appid=e0587d27e5b47cb13ba1b093e60738f7&units=metric`;
 
     const response = await fetch(url);
     const jsonResponse = response.json();
@@ -59,7 +63,7 @@ async function getLocationWeatherFiveDays(search) {
     const latitude = locationInfo.coord.lat;
     const longitude = locationInfo.coord.lon;
 
-    const url = `${process.env.REACT_APP_OPEN_WEATHER_URL}/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+    const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=e0587d27e5b47cb13ba1b093e60738f7&units=metric`;
 
     const response = await fetch(url);
     const jsonResponse = response.json();

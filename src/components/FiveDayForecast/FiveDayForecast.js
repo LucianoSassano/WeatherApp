@@ -3,14 +3,14 @@ import { Line } from "react-chartjs-2";
 import { getLocationWeatherFiveDays } from  "../../services/WheaterApi.js";
 import "../FiveDayForecast/FiveDayForecast.css";
 
-const FiveDayForecast = () => {
+const FiveDayForecast = (props) => {
   const [xLabels, setxDays] = useState([]);
   const [yData, setyData] = useState([]);
   const [weekAvgTemps, setWeekAvgTemps] = useState([]);
 
   useEffect(() => {
-    getLocationWeatherFiveDays("Paris").then((results) => {
-      
+    getLocationWeatherFiveDays(props.locationSearch).then((results) => {
+  
       let dateArray = [];
       let tempArray = [];
       let weekAvgSum = 0;
@@ -46,7 +46,7 @@ const FiveDayForecast = () => {
       setxDays(dateArray);
       setyData(tempArray);
     });
-  }, []);
+  }, [props.locationSearch]);
 
   return (
     <>
