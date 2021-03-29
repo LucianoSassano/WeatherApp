@@ -12,29 +12,6 @@
   width: 100vw;
 }
 
-.favorites-data {
-  text-align: center;
-  height: 10vh;
-  width: 100vw;
-  align-content: center;
-  color: #eae6ec;
-  text-shadow: 1px 1px #212021;
-  margin-bottom: 6%;
-  background-color:RGBA(43,45,66,0.65);
-}
-
-.favorites-data h1 {
-  font-size: 3vw;
-}
-
-.favorites-data h2 {
-  font-size: 2vw;
-}
-
-.favorites-data h3 {
-  font-size: 2vw;
-}
-
 @media all and (min-width: 280px) {
   #favorites-container .favorites-data {
   
@@ -193,7 +170,7 @@
 
     margin-bottom: 3vh;
     background-color:RGBA(43,45,66,0.65);
-    height: 60vh;
+    height: 75vh;
     margin-left: auto;
     margin-right: auto;
     width: 30vw;
@@ -201,6 +178,7 @@
   }
 
   #favorites-container .favorites-data h1 {
+    margin-top: 2vh;
     font-size: 6vw;
   }
   #favorites-container .favorites-data h2 {
