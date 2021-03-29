@@ -44,7 +44,7 @@ const FavoriteWeather = (props) => {
             </h2>
             <h4>{location.detail}</h4>
             <img
-              src={`http://openweathermap.org/img/wn/${location.icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${location.icon}@2x.png`}
             ></img>
             <br></br>
             <button
