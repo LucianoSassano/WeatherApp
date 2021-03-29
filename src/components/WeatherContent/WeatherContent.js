@@ -8,7 +8,7 @@ const WeatherContent = (props) => {
 
 
   useEffect(() => {
-    if (localStorage.length > 0) {
+    if (localStorage.getItem('favorites').length > 0 && localStorage.getItem('favorites') != null) {
       let userFavs = [];
       let localStorageFavs = JSON.parse(localStorage.getItem("favorites"));
       if (Array.isArray(localStorageFavs)) {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Home/Home.css";
 import HomeWeather from "../../components/HomeWeather/HomeWeather.js";
 import Navbar from "../../components/Navbar/Navbar";
@@ -10,6 +10,13 @@ const Home = () => {
   const [secondSerch, setSecondSerch] = useState("");
   const [secondWeather, setSecondWeather] = useState([]);
   const [favorite, setFavorite] = useState([]);
+
+  const [homeView, setHomeView] = useState(false);
+
+  useEffect(() => {
+    setHomeView(true);
+  }, []);
+
 
   const handleSearchSingle = (e) => {
     const currentVal = e.target.value;
@@ -109,6 +116,7 @@ const Home = () => {
     <>
       <div className="home-container">
         <Navbar
+          homeView={homeView}
           onChangeDual={handleSearchDual}
           onChangeSingle={handleSearchSingle}
           handleSearchSubmit={handleSubmit}
